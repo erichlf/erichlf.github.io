@@ -1,3 +1,5 @@
 #+TITLE: Index
+#+AUTHOR:      Erich L Foster
+#+EMAIL:       erichlf@gmail.com
 
-This is the home page of Erich Foster.
+This page will contain things I find interesting or things I need for reference.

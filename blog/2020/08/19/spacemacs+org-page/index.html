@@ -17,6 +17,7 @@
         <ul>
           <li><a href="/blog/">Blog</a></li>
           <li><a href="/tags/">Tags</a></li>
+          <li><a href="/tags/">Tags</a></li>
           <li><a href="/about/">About</a></li>
           <li><a href="https://github.com/erichlf">GitHub</a></li>
           <li><a href="/rss.xml">RSS</a></li>
@@ -36,16 +37,17 @@ Note: I took a good portion of this from [[<a href="http://adlawren.github.io/bl
 However, I felt some more details needed to be added.
 </p>
 
-<div id="outline-container-org3f8647f" class="outline-2">
-<h2 id="org3f8647f">Installing org-page:</h2>
-<div class="outline-text-2" id="text-org3f8647f">
+<div id="outline-container-org262c47d" class="outline-2">
+<h2 id="org262c47d">Installing org-page:</h2>
+<div class="outline-text-2" id="text-org262c47d">
 <p>
 First thing to do is to add org-page to the <code>additional-packages</code> portion of your <code>.spacemacs</code> file
 </p>
 <div class="org-src-container">
 <pre class="src src-emacs-listp">(org-page :location (recipe
                       :fetcher github
-                      :repo "sillykelvin/org-page"))
+                      :repo "sillykelvin/org-page"
+                      :files ("*.el" "doc" "themes")))
 </pre>
 </div>
 <p>
@@ -63,9 +65,9 @@ Next add the following to the <code>user-config</code> portion of your <code>.sp
 </div>
 </div>
 
-<div id="outline-container-org291c016" class="outline-2">
-<h2 id="org291c016">Create Your Repo:</h2>
-<div class="outline-text-2" id="text-org291c016">
+<div id="outline-container-orgd2dda18" class="outline-2">
+<h2 id="orgd2dda18">Create Your Repo:</h2>
+<div class="outline-text-2" id="text-orgd2dda18">
 <p>
 Github requires the repo name to be something like githubuser.github.io
 </p>
@@ -83,18 +85,18 @@ magit-status type <code>M a</code>. From there you can just follow the prompts t
 </div>
 </div>
 
-<div id="outline-container-orgdebc68d" class="outline-2">
-<h2 id="orgdebc68d">Create Your First Blog Post:</h2>
-<div class="outline-text-2" id="text-orgdebc68d">
+<div id="outline-container-orgfbe6c79" class="outline-2">
+<h2 id="orgfbe6c79">Create Your First Blog Post:</h2>
+<div class="outline-text-2" id="text-orgfbe6c79">
 <p>
 This is as simple as <code>SPC SPC op/new-post</code> and following the prompts.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgcac4e42" class="outline-2">
-<h2 id="orgcac4e42">Publish Your Page:</h2>
-<div class="outline-text-2" id="text-orgcac4e42">
+<div id="outline-container-org5578bc1" class="outline-2">
+<h2 id="org5578bc1">Publish Your Page:</h2>
+<div class="outline-text-2" id="text-org5578bc1">
 <p>
 This should be as simple as <code>SPC SPC op/do-publication</code> and following the prompts,
 which is likely to result in you pushing <code>y n y y</code>.

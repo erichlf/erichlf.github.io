@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>How to Mount Multiple Google Drives Using Autofs - That Stuff I Found Along the Way</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Erich L Foster" />
+    <meta name="description" content="Directions to enable multiple google-drive mounts using autofs" />
+    <meta name="keywords" content="autofs, google-drive" />
+    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
+  </head>
+  <body class="container">
+    <div>
+      <header class="masthead">
+        <h1 class="masthead-title"><a href="/">That Stuff I Found Along the Way</a></h1>
+        <p></p>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <!--
+          <li><a href="/tags/">Tags</a></li>
+          -->
+          <li><a href="/about/">About</a></li>
+          <li><a href="https://github.com/erichlf">GitHub</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+        <form method="get" id="searchform" action="//www.google.com/search">
+          <input type="text" class="field" name="q" id="s" placeholder="Search">
+          <input type="hidden" name="as_sitesearch" value="erichlf.github.io">
+        </form>
+      </header>
+    </div>
+
+<div>
+<div class="post">
+<h1>How to Mount Multiple Google Drives Using Autofs</h1>
+<p>
+Note: I am using a debian based system, so the commands below correspond to those types of systems.
+</p>
+
+<div id="outline-container-org11658a2" class="outline-2">
+<h2 id="org11658a2">Install <code>autofs</code></h2>
+<div class="outline-text-2" id="text-org11658a2">
+<p>
+If you don't already have <code>autofs</code> installed easily using <code>apt</code>.
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">sudo apt install autofs
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc21df43" class="outline-2">
+<h2 id="orgc21df43">Install <code>google-drive-ocamlfuse</code></h2>
+<div class="outline-text-2" id="text-orgc21df43">
+<p>
+Next thing to do is install <code>google-drive-ocamlfuse</code>.
+</p>
+
+<p>
+We enable the ppa using the following
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">sudo add-apt-repository ppa:alessandro-strada/ppa -y
+</pre>
+</div>
+<p>
+and then we can install it by
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">sudo apt update
+sudo apt install -y google-drive-ocamlfuse
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org931c77c" class="outline-2">
+<h2 id="org931c77c">Create configs for each google-drive</h2>
+<div class="outline-text-2" id="text-org931c77c">
+<p>
+To create each config we need to add a config for each google-drive. Let's assume the first drive's
+user name is <code>USER1</code> and so we will create a <code>$HOME/.gdfuse/USER1/config</code> file.
+</p>
+
+<p>
+This file should contain the following
+</p>
+<blockquote>
+<p>
+acknowledge_abuse=false
+apps_script_format=desktop
+apps_script_icon=
+async_upload_queue=false
+async_upload_queue_max_length=0
+async_upload_threads=10
+autodetect_mime=true
+background_folder_fetching=false
+cache_directory=
+client_id=
+client_secret=
+connect_timeout_ms=5000
+curl_debug_off=false
+data_directory=
+debug_buffers=false
+delete_forever_in_trash_folder=false
+desktop_entry_as_html=false
+desktop_entry_exec=
+disable_trash=false
+docs_file_extension=true
+document_format=desktop
+document_icon=
+download_docs=true
+drawing_format=desktop
+drawing_icon=
+form_format=desktop
+form_icon=
+fusion_table_format=desktop
+fusion_table_icon=
+keep_duplicates=false
+large_file_read_only=false
+large_file_threshold_mb=16
+log_directory=
+log_to=
+lost_and_found=false
+low_speed_limit=0
+low_speed_time=0
+map_format=desktop
+map_icon=
+max_cache_size_mb=512
+max_download_speed=0
+max_memory_cache_size=10485760
+max_retries=8
+max_upload_chunk_size=1099511627776
+max_upload_speed=0
+memory_buffer_size=1048576
+metadata_cache_time=60
+metadata_memory_cache=true
+metadata_memory_cache_saving_interval=30
+mv_keep_target=false
+presentation_format=desktop
+presentation_icon=
+read_ahead_buffers=3
+read_only=false
+redirect_uri=
+root_folder=
+scope=
+service_account_credentials_path=
+service_account_user_to_impersonate=
+spreadsheet_format=desktop
+spreadsheet_icon=
+sqlite3_busy_timeout=5000
+stream_large_files=false
+team_drive_id=
+umask=0o022
+verification_code=
+write_buffers=false
+</p>
+</blockquote>
+
+<p>
+Create this file for each drive you want added.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfd01cfb" class="outline-2">
+<h2 id="orgfd01cfb">Authenticate each google-drive</h2>
+<div class="outline-text-2" id="text-orgfd01cfb">
+<p>
+For each config that you have created you will need to authenticate that account. To do this we simply
+mount the each drive using <code>google-drive-ocamlfuse</code>. First we will want to make a temporary location to
+mount the drive and then we will mount it and once we are sure it is working unmount it.
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">mkdir /tmp/google-drive
+google-drive-ocamlfuse -label USER1 -config .gdfuse/USER/config /tmp/google-drive
+</pre>
+</div>
+<p>
+You should be prompted to sign in with your google account. Select the account you want to correspond
+to this mount. Once you have authenticated your account everything should be mounted, which you can
+easily check using
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">ls /tmp/google-drive
+</pre>
+</div>
+<p>
+and verify that everything you expect is in there. If there seems to be something wrong then you can
+try mounting again and add <code>-d</code> flag to turn on debugging.
+</p>
+
+<p>
+Once you are sure things are working then unmount things
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">sudo umount /tmp/google-drive
+</pre>
+</div>
+
+<p>
+Again, repeat this for each drive you want to mount, being sure to select the correct google account
+during authentication.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge54dfcc" class="outline-2">
+<h2 id="orge54dfcc">Create scripts to handle the mounts</h2>
+<div class="outline-text-2" id="text-orge54dfcc">
+</div>
+<div id="outline-container-org00c5061" class="outline-3">
+<h3 id="org00c5061">Create gdfuse</h3>
+<div class="outline-text-3" id="text-org00c5061">
+<p>
+Most of the magic will done by <code>/usr/bin/gdfuse</code>, which should contain the following
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">#!/bin/bash
+label=$1
+location=$2
+CONFIG=$(echo $* | sed 's/.\+config=\(.\+\)/\1/')
+USER=$(basename ${CONFIG%.gdfuse*})
+FUSE=$(echo $* | sed 's/.\+-o \(.\+\),config=.\+/\1/')
+sudo -u $USER /usr/bin/google-drive-ocamlfuse -config $CONFIG -label $label $location -o $FUSE
+exit 0
+</pre>
+</div>
+<p>
+Make sure you can execute this by running
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">sudo chmod 755 /usr/bin/gdfuse
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9a7de83" class="outline-3">
+<h3 id="org9a7de83">Create autofs scripts</h3>
+<div class="outline-text-3" id="text-org9a7de83">
+<p>
+Add the following to <code>/etc/auto.master</code>
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">/media/Google /etc/auto.gdrive --browse
+</pre>
+</div>
+<p>
+<code>/media/Google</code> is the directory where each drive will be mounted as sub-directories.
+</p>
+
+<p>
+I like the <code>--browse</code> flag because it allows me to see the potential mount points and therefore I can do auto-completion.
+</p>
+
+<p>
+To ensure we can mount this without any permission issues we are going to want to create <code>/media/Google</code> and then claim
+ownership by
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">sudo mkdir /media/Google
+sudo chown $USER /media/Google
+</pre>
+</div>
+
+<p>
+Create a <code>/etc/auto.gdrive</code> file and paste the following
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">MOUNT1 -fstype=fuse,rw,uid=1000,gid=1000,user,_netdev,config=$HOME/.gdfuse/DRIVE1_NAME/config :gdfuse\#LABEL1
+MOUNT2 -fstype=fuse,rw,uid=1000,gid=1000,user,_netdev,config=$HOME/.gdfuse/DRIVE2_NAME/config :gdfuse\#LABEL2
+</pre>
+</div>
+<p>
+You will need one command per google-drive mount. The above assumes you have two mounts to be mounted in
+<code>/media/Google/MOUNT1</code> and <code>/media/Google/MOUNT2</code>. The first mount will correspond to the config in
+<code>~/.gdfuse/DRIVE1_NAME</code> while the second will correspond to the config in <code>~/.gdfuse/DRIVE2_NAME</code>. Recall, these configs
+were created earlier.
+</p>
+
+<p>
+I tend to make drive names and the labels the same, but they don't have to be.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org262728d" class="outline-2">
+<h2 id="org262728d">Restart autofs and test things out</h2>
+<div class="outline-text-2" id="text-org262728d">
+<p>
+Now is the time to see if our hard work has paid off. So, let's restart autofs and attempt to mount a drive
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">sudo systemctl restart autofs
+ls /media/MOUNT1
+</pre>
+</div>
+<p>
+If everything worked you should see the contents of your google-drive corresponding to <code>MOUNT1</code>. If that didn't work
+then I would suggest using autofs in debug mode... First we need to stop autofs
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">sudo systemctl stop autofs
+</pre>
+</div>
+<p>
+Then we are going to want to start autofs in debug mode
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">sudo automount -f -v
+</pre>
+</div>
+<p>
+Then try using <code>ls</code> on the problematic drive and make notes of the messages coming out of automount. Hopefully, it
+will be obvious for you and you'll be able to fix things easily. Once you are done debugging kill the automount and
+restart autofs
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">sudo systemctl start autofs
+</pre>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+    <div>
+      <div class="post-meta">
+        <span title="post date" class="post-info">2020-08-24</span>
+        <span title="last modification date" class="post-info">2020-08-24</span>
+        <span title="tags" class="post-info"><a href="/tags/autofs/">autofs</a>, <a href="/tags/google-drive/">google-drive</a></span>
+        <span title="author" class="post-info">Erich L Foster</span>
+      </div>
+      <section>
+        <h1>Comments</h1>
+      </section>
+      <script src="//code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="/media/js/main.js"></script>
+      <div class="footer">
+        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 26.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
+        <p>
+          Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:erichlf &lt;at&gt; gmail &lt;dot&gt; com">Erich L Foster</a>
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

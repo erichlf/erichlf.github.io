@@ -1,0 +1,3 @@
+[submodule "Recipes"]
+	path = recipes
+	url = git@github.com:erichlf/Recipes.git

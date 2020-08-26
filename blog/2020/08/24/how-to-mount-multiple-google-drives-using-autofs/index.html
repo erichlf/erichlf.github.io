@@ -15,6 +15,7 @@
         <h1 class="masthead-title"><a href="/">That Stuff I Found Along the Way</a></h1>
         <p></p>
         <ul>
+          <li><a href="/recipes/">Recipes</a></li>
           <li><a href="/blog/">Blog</a></li>
           <li><a href="/tags/">Tags</a></li>
           <!--
@@ -38,9 +39,9 @@
 Note: I am using a debian based system, so the commands below correspond to those types of systems.
 </p>
 
-<div id="outline-container-org11658a2" class="outline-2">
-<h2 id="org11658a2">Install <code>autofs</code></h2>
-<div class="outline-text-2" id="text-org11658a2">
+<div id="outline-container-org982ca5c" class="outline-2">
+<h2 id="org982ca5c">Install <code>autofs</code></h2>
+<div class="outline-text-2" id="text-org982ca5c">
 <p>
 If you don't already have <code>autofs</code> installed easily using <code>apt</code>.
 </p>
@@ -51,9 +52,9 @@ If you don't already have <code>autofs</code> installed easily using <code>apt</
 </div>
 </div>
 
-<div id="outline-container-orgc21df43" class="outline-2">
-<h2 id="orgc21df43">Install <code>google-drive-ocamlfuse</code></h2>
-<div class="outline-text-2" id="text-orgc21df43">
+<div id="outline-container-org37ef722" class="outline-2">
+<h2 id="org37ef722">Install <code>google-drive-ocamlfuse</code></h2>
+<div class="outline-text-2" id="text-org37ef722">
 <p>
 Next thing to do is install <code>google-drive-ocamlfuse</code>.
 </p>
@@ -76,9 +77,9 @@ sudo apt install -y google-drive-ocamlfuse
 </div>
 </div>
 
-<div id="outline-container-org931c77c" class="outline-2">
-<h2 id="org931c77c">Create configs for each google-drive</h2>
-<div class="outline-text-2" id="text-org931c77c">
+<div id="outline-container-orgb10f343" class="outline-2">
+<h2 id="orgb10f343">Create configs for each google-drive</h2>
+<div class="outline-text-2" id="text-orgb10f343">
 <p>
 To create each config we need to add a config for each google-drive. Let's assume the first drive's
 user name is <code>USER1</code> and so we will create a <code>$HOME/.gdfuse/USER1/config</code> file.
@@ -165,9 +166,9 @@ Create this file for each drive you want added.
 </div>
 </div>
 
-<div id="outline-container-orgfd01cfb" class="outline-2">
-<h2 id="orgfd01cfb">Authenticate each google-drive</h2>
-<div class="outline-text-2" id="text-orgfd01cfb">
+<div id="outline-container-org9fef97a" class="outline-2">
+<h2 id="org9fef97a">Authenticate each google-drive</h2>
+<div class="outline-text-2" id="text-org9fef97a">
 <p>
 For each config that you have created you will need to authenticate that account. To do this we simply
 mount the each drive using <code>google-drive-ocamlfuse</code>. First we will want to make a temporary location to
@@ -207,13 +208,13 @@ during authentication.
 </div>
 </div>
 
-<div id="outline-container-orge54dfcc" class="outline-2">
-<h2 id="orge54dfcc">Create scripts to handle the mounts</h2>
-<div class="outline-text-2" id="text-orge54dfcc">
+<div id="outline-container-org2332d07" class="outline-2">
+<h2 id="org2332d07">Create scripts to handle the mounts</h2>
+<div class="outline-text-2" id="text-org2332d07">
 </div>
-<div id="outline-container-org00c5061" class="outline-3">
-<h3 id="org00c5061">Create gdfuse</h3>
-<div class="outline-text-3" id="text-org00c5061">
+<div id="outline-container-orgfed2862" class="outline-3">
+<h3 id="orgfed2862">Create gdfuse</h3>
+<div class="outline-text-3" id="text-orgfed2862">
 <p>
 Most of the magic will done by <code>/usr/bin/gdfuse</code>, which should contain the following
 </p>
@@ -238,9 +239,9 @@ Make sure you can execute this by running
 </div>
 </div>
 
-<div id="outline-container-org9a7de83" class="outline-3">
-<h3 id="org9a7de83">Create autofs scripts</h3>
-<div class="outline-text-3" id="text-org9a7de83">
+<div id="outline-container-orga0013ff" class="outline-3">
+<h3 id="orga0013ff">Create autofs scripts</h3>
+<div class="outline-text-3" id="text-orga0013ff">
 <p>
 Add the following to <code>/etc/auto.master</code>
 </p>
@@ -288,9 +289,9 @@ I tend to make drive names and the labels the same, but they don't have to be.
 </div>
 </div>
 
-<div id="outline-container-org262728d" class="outline-2">
-<h2 id="org262728d">Restart autofs and test things out</h2>
-<div class="outline-text-2" id="text-org262728d">
+<div id="outline-container-orgf4fae83" class="outline-2">
+<h2 id="orgf4fae83">Restart autofs and test things out</h2>
+<div class="outline-text-2" id="text-orgf4fae83">
 <p>
 Now is the time to see if our hard work has paid off. So, let's restart autofs and attempt to mount a drive
 </p>
@@ -337,6 +338,21 @@ restart autofs
       </div>
       <section>
         <h1>Comments</h1>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          //var disqus_developer = 1;
+          var disqus_identifier = "/blog/2020/08/24/how-to-mount-multiple-google-drives-using-autofs";
+          var disqus_url = "https://erichlf.github.io/blog/2020/08/24/how-to-mount-multiple-google-drives-using-autofs";
+          var disqus_shortname = 'erichfoster';
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="//disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
       </section>
       <script src="//code.jquery.com/jquery-latest.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>

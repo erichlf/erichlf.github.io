@@ -15,8 +15,8 @@
         <h1 class="masthead-title"><a href="/">That Stuff I Found Along the Way</a></h1>
         <p></p>
         <ul>
-          <li><a href="/recipes/">Recipes</a></li>
           <li><a href="/blog/">Blog</a></li>
+          <li><a href="/recipes/">Recipes</a></li>
           <li><a href="/tags/">Tags</a></li>
           <!--
           <li><a href="/tags/">Tags</a></li>
@@ -39,9 +39,9 @@
 Note: I am using a debian based system, so the commands below correspond to those types of systems.
 </p>
 
-<div id="outline-container-orgaad6e9f" class="outline-2">
-<h2 id="orgaad6e9f">Install <code>autofs</code></h2>
-<div class="outline-text-2" id="text-orgaad6e9f">
+<div id="outline-container-org3887f06" class="outline-2">
+<h2 id="org3887f06">Install <code>autofs</code></h2>
+<div class="outline-text-2" id="text-org3887f06">
 <p>
 If you don't already have <code>autofs</code> installed easily using <code>apt</code>.
 </p>
@@ -52,9 +52,9 @@ If you don't already have <code>autofs</code> installed easily using <code>apt</
 </div>
 </div>
 
-<div id="outline-container-orge1eacf3" class="outline-2">
-<h2 id="orge1eacf3">Install <code>google-drive-ocamlfuse</code></h2>
-<div class="outline-text-2" id="text-orge1eacf3">
+<div id="outline-container-org193b32e" class="outline-2">
+<h2 id="org193b32e">Install <code>google-drive-ocamlfuse</code></h2>
+<div class="outline-text-2" id="text-org193b32e">
 <p>
 Next thing to do is install <code>google-drive-ocamlfuse</code>.
 </p>
@@ -77,9 +77,9 @@ sudo apt install -y google-drive-ocamlfuse
 </div>
 </div>
 
-<div id="outline-container-orgdba9e6d" class="outline-2">
-<h2 id="orgdba9e6d">Create configs for each google-drive</h2>
-<div class="outline-text-2" id="text-orgdba9e6d">
+<div id="outline-container-org28f661f" class="outline-2">
+<h2 id="org28f661f">Create configs for each google-drive</h2>
+<div class="outline-text-2" id="text-org28f661f">
 <p>
 To create each config we need to add a config for each google-drive. Let's assume the first drive's
 user name is <code>USER1</code> and so we will create a <code>$HOME/.gdfuse/USER1/config</code> file.
@@ -166,9 +166,9 @@ Create this file for each drive you want added.
 </div>
 </div>
 
-<div id="outline-container-org63baa34" class="outline-2">
-<h2 id="org63baa34">Authenticate each google-drive</h2>
-<div class="outline-text-2" id="text-org63baa34">
+<div id="outline-container-org9db3cf6" class="outline-2">
+<h2 id="org9db3cf6">Authenticate each google-drive</h2>
+<div class="outline-text-2" id="text-org9db3cf6">
 <p>
 For each config that you have created you will need to authenticate that account. To do this we simply
 mount the each drive using <code>google-drive-ocamlfuse</code>. First we will want to make a temporary location to
@@ -208,13 +208,13 @@ during authentication.
 </div>
 </div>
 
-<div id="outline-container-org7cff8af" class="outline-2">
-<h2 id="org7cff8af">Create scripts to handle the mounts</h2>
-<div class="outline-text-2" id="text-org7cff8af">
+<div id="outline-container-org6a00e3c" class="outline-2">
+<h2 id="org6a00e3c">Create scripts to handle the mounts</h2>
+<div class="outline-text-2" id="text-org6a00e3c">
 </div>
-<div id="outline-container-orgff4ba5c" class="outline-3">
-<h3 id="orgff4ba5c">Create gdfuse</h3>
-<div class="outline-text-3" id="text-orgff4ba5c">
+<div id="outline-container-org7d0fa9a" class="outline-3">
+<h3 id="org7d0fa9a">Create gdfuse</h3>
+<div class="outline-text-3" id="text-org7d0fa9a">
 <p>
 Most of the magic will done by <code>/usr/bin/gdfuse</code>, which should contain the following
 </p>
@@ -239,9 +239,9 @@ Make sure you can execute this by running
 </div>
 </div>
 
-<div id="outline-container-org68183ed" class="outline-3">
-<h3 id="org68183ed">Create autofs scripts</h3>
-<div class="outline-text-3" id="text-org68183ed">
+<div id="outline-container-org565672f" class="outline-3">
+<h3 id="org565672f">Create autofs scripts</h3>
+<div class="outline-text-3" id="text-org565672f">
 <p>
 Add the following to <code>/etc/auto.master</code>
 </p>
@@ -289,9 +289,9 @@ I tend to make drive names and the labels the same, but they don't have to be.
 </div>
 </div>
 
-<div id="outline-container-org26c261e" class="outline-2">
-<h2 id="org26c261e">Restart autofs and test things out</h2>
-<div class="outline-text-2" id="text-org26c261e">
+<div id="outline-container-orgafb4e53" class="outline-2">
+<h2 id="orgafb4e53">Restart autofs and test things out</h2>
+<div class="outline-text-2" id="text-orgafb4e53">
 <p>
 Now is the time to see if our hard work has paid off. So, let's restart autofs and attempt to mount a drive
 </p>

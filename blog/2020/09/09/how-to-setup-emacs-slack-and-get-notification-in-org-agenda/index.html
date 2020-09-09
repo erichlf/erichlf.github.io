@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>How to Setup Emacs-Slack and Get Notification in Org-Agenda - That Stuff I Found Along the Way</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Erich L Foster" />
+    <meta name="description" content="How I got emacs-slack to work with org-agenda and stop worrying" />
+    <meta name="keywords" content="slack, org-agenda, emacs" />
+    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
+  </head>
+  <body class="container">
+    <div>
+      <header class="masthead">
+        <h1 class="masthead-title"><a href="/">That Stuff I Found Along the Way</a></h1>
+        <p></p>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/recipes/">Recipes</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <!--
+          <li><a href="/tags/">Tags</a></li>
+          -->
+          <li><a href="/about/">About</a></li>
+          <li><a href="https://github.com/erichlf">GitHub</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+        <form method="get" id="searchform" action="//www.google.com/search">
+          <input type="text" class="field" name="q" id="s" placeholder="Search">
+          <input type="hidden" name="as_sitesearch" value="erichlf.github.io">
+        </form>
+      </header>
+    </div>
+
+<div>
+<div class="post">
+<h1>How to Setup Emacs-Slack and Get Notification in Org-Agenda</h1>
+<div id="outline-container-org1c718c3" class="outline-2">
+<h2 id="org1c718c3">note:</h2>
+<div class="outline-text-2" id="text-org1c718c3">
+<p>
+Thanks to <a href="https://ag91.github.io/blog/2020/08/14/slack-messages-in-your-org-agenda/">Andrea (ag91)</a> for the initial work he provided.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgee9feee" class="outline-2">
+<h2 id="orgee9feee"><a href="https://github.com/yuya373/emacs-slack">emacs-slack</a> Oh My!</h2>
+<div class="outline-text-2" id="text-orgee9feee">
+<p>
+There is a nice little bit of code that allows you to run slack inside emacs. Seriously, it is pretty nice.
+However, one thing that is lacking when using slack in emacs is being notified of messages. For me this is
+a problem, and I am sure there is someone out there thinking, "wait, this is a problem?" Anyway, the
+following will, hopefully, give all the details you need to get things up and running.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc723605" class="outline-2">
+<h2 id="orgc723605">Setting up emacs-slack</h2>
+<div class="outline-text-2" id="text-orgc723605">
+</div>
+<div id="outline-container-orgf37a05c" class="outline-3">
+<h3 id="orgf37a05c">Install emacs-slack</h3>
+<div class="outline-text-3" id="text-orgf37a05c">
+<p>
+As I have stated in previously posts, I am using <a href="https://www.spacemacs.org">spacemacs</a> and so installation of emacs-slack consists of
+adding <code>slack</code> to your <code>dotspacemacs-configuration-layers</code>. For what ever distribution you are using you
+will need to look into how to install packages.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge769be3" class="outline-3">
+<h3 id="orge769be3">Slack settings</h3>
+<div class="outline-text-3" id="text-orge769be3">
+<p>
+First thing to do is get your token, which you can do by
+</p>
+<ol class="org-ol">
+<li>Using Chrome, open and sign into the slack customization page, e.g. <a href="https://my.slack.com/customize">https://my.slack.com/customize</a></li>
+<li>Right click anywhere on the page and choose "inspect" from the context menu. This will open the
+Chrome developer tools.</li>
+<li>Find the console (it's one of the tabs in the developer tools window)</li>
+<li>At the prompt ("&gt; ") type the following: window.prompt("your api token is: ", TS.boot_data.api_token)</li>
+<li>Copy the displayed token elsewhere, and close the window.</li>
+</ol>
+
+<p>
+Once you have your token the next thing that needs to be done is setup a login for slack. I don't like
+to make UIDs and such public, so I am using <a href="https://www.passwordstore.org/">pass</a> to save my information, including passwords, as encrypted
+files on my system and then using <code>password-store-get</code> to access that information. However, you can just
+enter any information you like as plane text.
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">;; setup slack
+(slack-register-team
+  :name &lt;your-slack-team&gt;
+  :default t
+  :client-id (password-store-get &lt;path-to-uid&gt;)
+  :client-secret (password-store-get &lt;path-to-password&gt;)
+  :token (password-store-get &lt;path-to-slack-token&gt;)
+  :full-and-display-names t
+  :subscribed-channels '(&lt;a list of channels you want to be notified about&gt;))
+</pre>
+</div>
+
+<p>
+Now that you have your slack login information setup you might want to have some settings to make things
+easier. One thing emacs-slacks loves to do is ask what team it should use (all the time), so that might
+be something you want to avoid.
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(setq slack-prefer-current-team t)  ;; stop asking me which team to use
+</pre>
+</div>
+
+<p>
+A nice timestamp was also something that I really wanted, so let's add that.
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">;; display a nice timestamp in slack
+(setq lui-time-stamp-format "[%Y-%m-%d %H:%M]")
+(setq lui-time-stamp-only-when-changed-p t)
+(setq lui-time-stamp-position 'right)
+</pre>
+</div>
+
+<p>
+Another thing that annoyed me was that in spacemacs the <code>:</code> key was set
+as a shortcut to insert an emoji, well I am a C++ programmer so that was getting quite annoying.
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(evil-define-key 'insert slack-mode-map (kbd ":") nil)  ;; don't insert emoji
+(evil-define-key 'insert slack-message-buffer-mode-map (kbd ":") nil)  ;; don't insert emoji
+(evil-define-key 'insert slack-thread-message-buffer-mode-map (kbd ":") nil)  ;; don't insert emoji
+</pre>
+</div>
+
+<p>
+And for some reason spacemacs didn't provide a shortcut for deleting a slack message, so let's add that too.
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(define-key slack-mode-map (kbd "C-c C-d") #'slack-message-delete)
+</pre>
+</div>
+
+<p>
+Finally, let's make sure that slack starts
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(slack-start)  ;; start slack when opening emacs
+</pre>
+</div>
+
+<p>
+For me this is everything I have to setup emacs-slack in a reasonable way.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf35b163" class="outline-2">
+<h2 id="orgf35b163">What About Notifications?</h2>
+<div class="outline-text-2" id="text-orgf35b163">
+<p>
+While emacs-slack is pretty sweet, it does lack the ability to notify you when a new message shows up.
+Of course, you can use <code>slack-all-unread</code> (<code>SPC a c s u</code> in spacemacs), but for some reason this wasn't
+enough bells and whistles for me. However, we have org-agenda, so why not use that to display direct
+messages?
+</p>
+
+<p>
+First thing to do is create <code>slack.org</code> file. I put this in my org directory, which is located in
+<code>$HOME/org/</code>. So change the following to fit your setup. In this <code>slack.org</code> file we will create the
+following list of TODO states
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">#+TODO: UNREAD(u) | READ(r)
+</pre>
+</div>
+<p>
+This tells org-mode that the UNREAD state is the only TODO state, while the READ state is the only
+closed state. It also says not to log state changes.
+</p>
+
+<p>
+Now add that org file to your <code>org-agenda-files</code>
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(setq org-agenda-files (list "~/org/slack.org" "your other org files you want in the agenda"))
+</pre>
+</div>
+
+<p>
+The rest will require us to setup <a href="https://github.com/jwiegley/alert">alert</a> (which is included in spacemacs by default). To do this we
+define a style for alert to use when dealing with slack messages. This style will create TODO items
+in a <code>slack.org</code> file of your choosing (I put it in <code>$HOME/org/</code>). Alert will get the message from
+emacs-slack and create a TODO item that I mark as UNREAD. It also limits the message length to 127
+characters.
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">;; setup org-agenda to keep track of unread messages in slack
+(alert-define-style
+  'my/alert-style :title
+  "Make Org headings for messages I receive - Style"
+  :notifier
+  (lambda (info)
+    (when (get-buffer "slack.org") (with-current-buffer "slack.org" (save-buffer)))
+    (write-region
+      (s-concat
+        "* UNREAD "
+        (plist-get info :title)
+        " : "
+        (format "%s %s" (plist-get info :title)
+                        (s-truncate 127 (plist-get info :message)))
+        "\n"
+        (format "&lt;%s&gt;" (format-time-string "%Y-%m-%d %H:%M"))
+        "\n")
+      nil
+      "~/org/slack.org"
+      t)))
+(setq alert-default-style 'message)
+(add-to-list 'alert-user-configuration
+  '(((:category . "slack")) my/alert-style nil))
+</pre>
+</div>
+
+<p>
+With the above setup will be able to see your slack messages show up in org-agenda. Hooray!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1113b01" class="outline-2">
+<h2 id="org1113b01">Okay, but How do I Mute These Things?</h2>
+<div class="outline-text-2" id="text-org1113b01">
+<p>
+Now that we can display or direct messages in org-agenda we probably want a way to mark them as READ
+and stop displaying it in our agenda. To do this we are going to add a hook to <code>org-agenda-mode-hook</code>
+that will provide the keybinding <code>T</code>. This keybinding will mark our message as READ and subsequently
+archive it. One annoyance with doing this is that every time you want to do anything emacs will ask
+if you want to save the <code>slack.org</code> and <code>slack.org_archive</code> buffers. To prevent this we can just
+save those buffers any time we hit <code>T</code>. Be aware this will save those buffers even if the item you
+are using <code>T</code> on in org-agenda isn't a slack item.
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(add-hook 'org-agenda-mode-hook (lambda () (local-set-key (kbd "T") 'my/org-agenda-todo-archive)))
+
+;; my functions follow
+(defun my/save-slack ()
+  "Save slack buffers"
+  (interactive)
+  (save-excursion
+    (dolist (buf '("slack.org_archive" "slack.org"))
+      (set-buffer buf)
+      (if (and (buffer-file-name) (buffer-modified-p))
+        (basic-save-buffer)
+        )
+      )
+    )
+  )
+
+(defun my/org-agenda-todo-archive ()
+  "Mark an agenda item as done, archive it, and save the slack buffers"
+  (interactive)
+  (org-agenda-todo 'done)
+  (org-agenda-archive)
+  (my/save-slack)
+  )
+</pre>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+    <div>
+      <div class="post-meta">
+        <span title="post date" class="post-info">2020-09-09</span>
+        <span title="last modification date" class="post-info">2020-09-09</span>
+        <span title="tags" class="post-info"><a href="/tags/slack/">slack</a>, <a href="/tags/org-agenda/">org-agenda</a>, <a href="/tags/emacs/">emacs</a></span>
+        <span title="author" class="post-info">Erich L Foster</span>
+      </div>
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          //var disqus_developer = 1;
+          var disqus_identifier = "/blog/2020/09/09/how-to-setup-emacs-slack-and-get-notification-in-org-agenda";
+          var disqus_url = "https://erichlf.github.io/blog/2020/09/09/how-to-setup-emacs-slack-and-get-notification-in-org-agenda";
+          var disqus_shortname = 'erichfoster';
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="//disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </section>
+      <script src="//code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="/media/js/main.js"></script>
+      <div class="footer">
+        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 26.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
+        <p>
+          Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:erichlf &lt;at&gt; gmail &lt;dot&gt; com">Erich L Foster</a>
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

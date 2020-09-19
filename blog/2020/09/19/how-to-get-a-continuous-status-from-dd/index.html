@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>How to Get a Continuous Status from dd - That Stuff I Found Along the Way</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Erich L Foster" />
+    <meta name="description" content="Getting and updating the status of dd in bash" />
+    <meta name="keywords" content="dd, linux, bash" />
+    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
+  </head>
+  <body class="container">
+    <div>
+      <header class="masthead">
+        <h1 class="masthead-title"><a href="/">That Stuff I Found Along the Way</a></h1>
+        <p></p>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/recipes/">Recipes</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <!--
+          <li><a href="/tags/">Tags</a></li>
+          -->
+          <li><a href="/about/">About</a></li>
+          <li><a href="https://github.com/erichlf">GitHub</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+        <form method="get" id="searchform" action="//www.google.com/search">
+          <input type="text" class="field" name="q" id="s" placeholder="Search">
+          <input type="hidden" name="as_sitesearch" value="erichlf.github.io">
+        </form>
+      </header>
+    </div>
+
+<div>
+<div class="post">
+<h1>How to Get a Continuous Status from dd</h1>
+
+<div id="outline-container-orgf03cf78" class="outline-2">
+<h2 id="orgf03cf78">note:</h2>
+<div class="outline-text-2" id="text-orgf03cf78">
+<p>
+Some versions of <code>dd</code> have the ability to provide the open <code>-status=progress</code> which makes the
+point of this post moot. But in the case your <code>dd</code> doesn't have this option, read on.
+</p>
+
+<p>
+I found my self needing to return a hard drive that had sensitive information on it, so of course
+I wanted to securely delete the contents before returning the drive.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6c7d046" class="outline-2">
+<h2 id="org6c7d046"><code>dd</code> Comes to the Rescue</h2>
+<div class="outline-text-2" id="text-org6c7d046">
+<p>
+To securely delete a drive one can run the following:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">dd if=/dev/urandom of=/dev/sda bs=1M
+</pre>
+</div>
+<p>
+This will write random data to the drive <code>/dev/sda</code> and overwrite any data that was already there.
+</p>
+
+<p>
+However, the disk was 8TB and so it was going to take quite some time and I wouldn't have a clue
+how far along things had progressed without some status update.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org361a9f9" class="outline-2">
+<h2 id="org361a9f9"><code>kill</code> to Get Update? What are Talking About?</h2>
+<div class="outline-text-2" id="text-org361a9f9">
+<p>
+It turns out you can run <code>dd</code> in the background and then use <code>kill</code> to get an update of the <code>dd</code>
+status. When I first came across this it sounded insane, because doesn't <code>kill</code> end processes?
+Well, that is true, but there are other signals that you can provide to <code>kill</code> which won't
+terminate a process. In this case we are going to use <code>USR1</code> (this signal may be different on
+your system).
+</p>
+
+<p>
+The first thing to do is run <code>dd</code> in the background and grab its <code>PID</code>:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">dd if=/dev/urandom of=/dev/sda bs=1M &amp; PID=$!
+</pre>
+</div>
+<p>
+Now that we have the <code>PID</code> and <code>dd</code> is running in the background we simply issue the <code>kill</code> signal:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">kill -USR1 $PID
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8b8bb93" class="outline-2">
+<h2 id="org8b8bb93">Nice! But Let's be Fancier</h2>
+<div class="outline-text-2" id="text-org8b8bb93">
+<p>
+Ok, but maybe I just want to look at the screen and not run a command every time I want an update.
+What we can do to solve this is to run the <code>kill</code> signal in a loop and use <code>echo</code> to print to the
+same line by
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">while kill -0 $PID &gt; /dev/null 2&gt;&amp;1
+do
+  echo -en "\r$(kill -USR1 $PID)"
+done
+</pre>
+</div>
+<p>
+The condition for the <code>while</code> loop is using <code>kill</code> with the flag <code>-0</code> to see if a signal can be sent
+to the process <code>$PID</code>. A signal can only be sent if the process still exists, so this while loop
+should only run while <code>$PID</code> is still running. Next we pipe the output to <code>/dev/null</code> so that we
+aren't spammed by the result of this condition. We also don't want to see the output from <code>stderr</code>,
+so we are piping that to <code>stdout</code>, which in turn is piped to <code>/dev/null</code>
+</p>
+
+<p>
+Inside the loop we are running echo with a couple flags; the <code>-n</code> tells echo not to output a
+trailing end line character, and the <code>-e</code> tells echo to interpret backslash escapes (the <code>\r</code>).
+And finally we are echoing the result of the <code>kill</code> signal, which is just the status of <code>dd</code>.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org40bee8e" class="outline-2">
+<h2 id="org40bee8e">Let's Put it All Together</h2>
+<div class="outline-text-2" id="text-org40bee8e">
+<p>
+We can combine this all together in a script that takes our drive as an argument:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">DRIVE=$1
+dd if=/dev/urandom of=$DRIVE bs=1M &amp; PID=$!
+while kill -0 $PID &gt; /dev/null 2&gt;&amp;1
+do
+  echo -en "\r$(kill -USR1 $PID)"
+done
+</pre>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+    <div>
+      <div class="post-meta">
+        <span title="post date" class="post-info">2020-09-19</span>
+        <span title="last modification date" class="post-info">2020-09-19</span>
+        <span title="tags" class="post-info"><a href="/tags/dd/">dd</a>, <a href="/tags/linux/">linux</a>, <a href="/tags/bash/">bash</a></span>
+        <span title="author" class="post-info">Erich L Foster</span>
+      </div>
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          //var disqus_developer = 1;
+          var disqus_identifier = "/blog/2020/09/19/how-to-get-a-continuous-status-from-dd";
+          var disqus_url = "https://erichlf.github.io/blog/2020/09/19/how-to-get-a-continuous-status-from-dd";
+          var disqus_shortname = 'erichfoster';
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="//disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </section>
+      <script src="//code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="/media/js/main.js"></script>
+      <div class="footer">
+        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 26.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
+        <p>
+          Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:erichlf &lt;at&gt; gmail &lt;dot&gt; com">Erich L Foster</a>
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

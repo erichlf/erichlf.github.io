@@ -36,9 +36,9 @@
 <div class="post">
 <h1>How to Get a Continuous Status from dd</h1>
 
-<div id="outline-container-orgf03cf78" class="outline-2">
-<h2 id="orgf03cf78">note:</h2>
-<div class="outline-text-2" id="text-orgf03cf78">
+<div id="outline-container-orga1f4c25" class="outline-2">
+<h2 id="orga1f4c25">note:</h2>
+<div class="outline-text-2" id="text-orga1f4c25">
 <p>
 Some versions of <code>dd</code> have the ability to provide the open <code>-status=progress</code> which makes the
 point of this post moot. But in the case your <code>dd</code> doesn't have this option, read on.
@@ -51,9 +51,9 @@ I wanted to securely delete the contents before returning the drive.
 </div>
 </div>
 
-<div id="outline-container-org6c7d046" class="outline-2">
-<h2 id="org6c7d046"><code>dd</code> Comes to the Rescue</h2>
-<div class="outline-text-2" id="text-org6c7d046">
+<div id="outline-container-orge79c179" class="outline-2">
+<h2 id="orge79c179"><code>dd</code> Comes to the Rescue</h2>
+<div class="outline-text-2" id="text-orge79c179">
 <p>
 To securely delete a drive one can run the following:
 </p>
@@ -72,9 +72,9 @@ how far along things had progressed without some status update.
 </div>
 </div>
 
-<div id="outline-container-org361a9f9" class="outline-2">
-<h2 id="org361a9f9"><code>kill</code> to Get Update? What are Talking About?</h2>
-<div class="outline-text-2" id="text-org361a9f9">
+<div id="outline-container-orgfad07e3" class="outline-2">
+<h2 id="orgfad07e3"><code>kill</code> to Get Update? What are Talking About?</h2>
+<div class="outline-text-2" id="text-orgfad07e3">
 <p>
 It turns out you can run <code>dd</code> in the background and then use <code>kill</code> to get an update of the <code>dd</code>
 status. When I first came across this it sounded insane, because doesn't <code>kill</code> end processes?
@@ -100,18 +100,20 @@ Now that we have the <code>PID</code> and <code>dd</code> is running in the back
 </div>
 </div>
 
-<div id="outline-container-org8b8bb93" class="outline-2">
-<h2 id="org8b8bb93">Nice! But Let's be Fancier</h2>
-<div class="outline-text-2" id="text-org8b8bb93">
+<div id="outline-container-org08c88e3" class="outline-2">
+<h2 id="org08c88e3">Nice! But Let's be Fancier</h2>
+<div class="outline-text-2" id="text-org08c88e3">
 <p>
 Ok, but maybe I just want to look at the screen and not run a command every time I want an update.
-What we can do to solve this is to run the <code>kill</code> signal in a loop and use <code>echo</code> to print to the
-same line by
+What we can do to solve this is to run the <code>kill</code> signal in a loop and use <code>clear</code> to print to the
+same lines by
 </p>
 <div class="org-src-container">
 <pre class="src src-bash">while kill -0 $PID &gt; /dev/null 2&gt;&amp;1
 do
-  echo -en "\r$(kill -USR1 $PID)"
+  kill -USR1 $PID
+  sleep 0.5
+  clear
 done
 </pre>
 </div>
@@ -124,29 +126,18 @@ so we are piping that to <code>stdout</code>, which in turn is piped to <code>/d
 </p>
 
 <p>
-Inside the loop we are running echo with a couple flags; the <code>-n</code> tells echo not to output a
-trailing end line character, and the <code>-e</code> tells echo to interpret backslash escapes (the <code>\r</code>).
-And finally we are echoing the result of the <code>kill</code> signal, which is just the status of <code>dd</code>.
-</p>
-</div>
-</div>
-
-
-<div id="outline-container-org40bee8e" class="outline-2">
-<h2 id="org40bee8e">Let's Put it All Together</h2>
-<div class="outline-text-2" id="text-org40bee8e">
-<p>
-We can combine this all together in a script that takes our drive as an argument:
+This is a bit janky, but it seems the best way to have this printed into the same area. If you don't
+like this options you can always go with the simpler, yet multiple output method using <code>watch</code>
 </p>
 <div class="org-src-container">
-<pre class="src src-bash">DRIVE=$1
-dd if=/dev/urandom of=$DRIVE bs=1M &amp; PID=$!
-while kill -0 $PID &gt; /dev/null 2&gt;&amp;1
-do
-  echo -en "\r$(kill -USR1 $PID)"
-done
+<pre class="src src-bash">watch -n 1 kill -USR1 $PID
 </pre>
 </div>
+
+<p>
+The <code>-n 1</code> says to run the <code>kill</code> signal every second. The solution here is much cleaner, but reults
+in many lines of output. So, it's up to you what you want here.
+</p>
 </div>
 </div>
 

@@ -18,9 +18,7 @@
           <li><a href="/blog/">Blog</a></li>
           <li><a href="/recipes/">Recipes</a></li>
           <li><a href="/tags/">Tags</a></li>
-          <!--
           <li><a href="/tags/">Tags</a></li>
-          -->
           <li><a href="/about/">About</a></li>
           <li><a href="https://github.com/erichlf">GitHub</a></li>
           <li><a href="/rss.xml">RSS</a></li>
@@ -36,9 +34,9 @@
 <div class="post">
 <h1>How to Get a Continuous Status from dd</h1>
 
-<div id="outline-container-org6cc596d" class="outline-2">
-<h2 id="org6cc596d">note:</h2>
-<div class="outline-text-2" id="text-org6cc596d">
+<div id="outline-container-orge312f64" class="outline-2">
+<h2 id="orge312f64">note:</h2>
+<div class="outline-text-2" id="text-orge312f64">
 <p>
 Some versions of <code>dd</code> have the ability to provide the open <code>-status=progress</code> which makes the
 point of this post moot. But in the case your <code>dd</code> doesn't have this option, read on.
@@ -51,9 +49,9 @@ I wanted to securely delete the contents before returning the drive.
 </div>
 </div>
 
-<div id="outline-container-orgade0e8f" class="outline-2">
-<h2 id="orgade0e8f"><code>dd</code> Comes to the Rescue</h2>
-<div class="outline-text-2" id="text-orgade0e8f">
+<div id="outline-container-orgfd46ce8" class="outline-2">
+<h2 id="orgfd46ce8"><code>dd</code> Comes to the Rescue</h2>
+<div class="outline-text-2" id="text-orgfd46ce8">
 <p>
 To securely delete a drive one can run the following:
 </p>
@@ -72,9 +70,9 @@ how far along things had progressed without some status update.
 </div>
 </div>
 
-<div id="outline-container-org59c3503" class="outline-2">
-<h2 id="org59c3503"><code>kill</code> to Get Update? What are Talking About?</h2>
-<div class="outline-text-2" id="text-org59c3503">
+<div id="outline-container-orgb86c0f5" class="outline-2">
+<h2 id="orgb86c0f5"><code>kill</code> to Get Update? What are Talking About?</h2>
+<div class="outline-text-2" id="text-orgb86c0f5">
 <p>
 It turns out you can run <code>dd</code> in the background and then use <code>kill</code> to get an update of the <code>dd</code>
 status. When I first came across this it sounded insane, because doesn't <code>kill</code> end processes?
@@ -100,9 +98,9 @@ Now that we have the <code>PID</code> and <code>dd</code> is running in the back
 </div>
 </div>
 
-<div id="outline-container-org1703e1b" class="outline-2">
-<h2 id="org1703e1b">Nice! But Let's be Fancier</h2>
-<div class="outline-text-2" id="text-org1703e1b">
+<div id="outline-container-org5c631a2" class="outline-2">
+<h2 id="org5c631a2">Nice! But Let's be Fancier</h2>
+<div class="outline-text-2" id="text-org5c631a2">
 <p>
 Ok, but maybe I just want to look at the screen and not run a command every time I want an update.
 What we can do to solve this is to run the <code>kill</code> signal in a loop and use <code>clear</code> to print to the

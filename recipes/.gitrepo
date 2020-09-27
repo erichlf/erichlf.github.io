@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:erichlf/Recipes.git
+	branch = master
+	commit = 902982c9af2d104b7e32ad3120a346b2d798c37c
+	parent = b9ea6a539ed5c0989c9940a2d2611b74beb72a23
+	method = merge
+	cmdver = 0.4.1

@@ -36,9 +36,9 @@
 <div class="post">
 <h1>How to Get a Continuous Status from dd</h1>
 
-<div id="outline-container-orga1f4c25" class="outline-2">
-<h2 id="orga1f4c25">note:</h2>
-<div class="outline-text-2" id="text-orga1f4c25">
+<div id="outline-container-org2b48052" class="outline-2">
+<h2 id="org2b48052">note:</h2>
+<div class="outline-text-2" id="text-org2b48052">
 <p>
 Some versions of <code>dd</code> have the ability to provide the open <code>-status=progress</code> which makes the
 point of this post moot. But in the case your <code>dd</code> doesn't have this option, read on.
@@ -51,9 +51,9 @@ I wanted to securely delete the contents before returning the drive.
 </div>
 </div>
 
-<div id="outline-container-orge79c179" class="outline-2">
-<h2 id="orge79c179"><code>dd</code> Comes to the Rescue</h2>
-<div class="outline-text-2" id="text-orge79c179">
+<div id="outline-container-orge31febe" class="outline-2">
+<h2 id="orge31febe"><code>dd</code> Comes to the Rescue</h2>
+<div class="outline-text-2" id="text-orge31febe">
 <p>
 To securely delete a drive one can run the following:
 </p>
@@ -72,9 +72,9 @@ how far along things had progressed without some status update.
 </div>
 </div>
 
-<div id="outline-container-orgfad07e3" class="outline-2">
-<h2 id="orgfad07e3"><code>kill</code> to Get Update? What are Talking About?</h2>
-<div class="outline-text-2" id="text-orgfad07e3">
+<div id="outline-container-org0e3de6b" class="outline-2">
+<h2 id="org0e3de6b"><code>kill</code> to Get Update? What are Talking About?</h2>
+<div class="outline-text-2" id="text-org0e3de6b">
 <p>
 It turns out you can run <code>dd</code> in the background and then use <code>kill</code> to get an update of the <code>dd</code>
 status. When I first came across this it sounded insane, because doesn't <code>kill</code> end processes?
@@ -100,9 +100,9 @@ Now that we have the <code>PID</code> and <code>dd</code> is running in the back
 </div>
 </div>
 
-<div id="outline-container-org08c88e3" class="outline-2">
-<h2 id="org08c88e3">Nice! But Let's be Fancier</h2>
-<div class="outline-text-2" id="text-org08c88e3">
+<div id="outline-container-org95799fb" class="outline-2">
+<h2 id="org95799fb">Nice! But Let's be Fancier</h2>
+<div class="outline-text-2" id="text-org95799fb">
 <p>
 Ok, but maybe I just want to look at the screen and not run a command every time I want an update.
 What we can do to solve this is to run the <code>kill</code> signal in a loop and use <code>clear</code> to print to the

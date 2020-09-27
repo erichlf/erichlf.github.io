@@ -3,7 +3,7 @@
 #+EMAIL:       erichlf@gmail.com
 #+DATE:        2020-08-19 Wed
 #+URI:         /blog/%y/%m/%d/spacemacs+org-page
-#+KEYWORDS:    <TODO: insert your keywords here>
+#+KEYWORDS:    <TODO:insert:your:keywords:here>:
 #+TAGS:        org-page, spacemacs, org-mode
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t

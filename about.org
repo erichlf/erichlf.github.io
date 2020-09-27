@@ -3,7 +3,7 @@
 #+EMAIL:       erichlf@gmail.com
 
 * About Erich L Foster
-
+:
   I went to school for a very long time to become a Mathematician.
   Eventually I came to the realization that I would be better suited
   to a career in Software Engineering and then somehow I ended up in

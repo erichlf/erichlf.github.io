@@ -3,7 +3,7 @@
 #+EMAIL:       erichlf@gmail.com
 #+DATE:        2020-08-24 Mon
 #+URI:         /blog/%y/%m/%d/how-to-mount-multiple-google-drives-using-autofs
-#+KEYWORDS:    autofs, google-drive
+#+KEYWORDS:    :autofs:google-drive:
 #+TAGS:        autofs, google-drive
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t

@@ -32,18 +32,18 @@
 <div>
 <div class="post">
 <h1>How to Setup Emacs-Slack and Get Notifications in Org-Agenda</h1>
-<div id="outline-container-orgfed10a2" class="outline-2">
-<h2 id="orgfed10a2">note:</h2>
-<div class="outline-text-2" id="text-orgfed10a2">
+<div id="outline-container-org6756a0a" class="outline-2">
+<h2 id="org6756a0a">note:</h2>
+<div class="outline-text-2" id="text-org6756a0a">
 <p>
 Thanks to <a href="https://ag91.github.io/blog/2020/08/14/slack-messages-in-your-org-agenda/">Andrea (ag91)</a> for the initial work he provided.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orga114d19" class="outline-2">
-<h2 id="orga114d19"><a href="https://github.com/yuya373/emacs-slack">emacs-slack</a> Oh My!</h2>
-<div class="outline-text-2" id="text-orga114d19">
+<div id="outline-container-org3a6e70b" class="outline-2">
+<h2 id="org3a6e70b"><a href="https://github.com/yuya373/emacs-slack">emacs-slack</a> Oh My!</h2>
+<div class="outline-text-2" id="text-org3a6e70b">
 <p>
 There is a nice little bit of code that allows you to run slack inside emacs. Seriously, it is pretty nice.
 However, one thing that is lacking when using slack in emacs is being notified of messages. For me this is
@@ -53,13 +53,13 @@ following will, hopefully, give all the details you need to get things up and ru
 </div>
 </div>
 
-<div id="outline-container-org1f6c226" class="outline-2">
-<h2 id="org1f6c226">Setting up emacs-slack</h2>
-<div class="outline-text-2" id="text-org1f6c226">
+<div id="outline-container-org248192b" class="outline-2">
+<h2 id="org248192b">Setting up emacs-slack</h2>
+<div class="outline-text-2" id="text-org248192b">
 </div>
-<div id="outline-container-org8703033" class="outline-3">
-<h3 id="org8703033">Install emacs-slack</h3>
-<div class="outline-text-3" id="text-org8703033">
+<div id="outline-container-org69deb99" class="outline-3">
+<h3 id="org69deb99">Install emacs-slack</h3>
+<div class="outline-text-3" id="text-org69deb99">
 <p>
 As I have stated in previously posts, I am using <a href="https://www.spacemacs.org">spacemacs</a> and so installation of emacs-slack consists of
 adding <code>slack</code> to your <code>dotspacemacs-configuration-layers</code>. For what ever distribution you are using you
@@ -68,9 +68,9 @@ will need to look into how to install packages.
 </div>
 </div>
 
-<div id="outline-container-org071fd15" class="outline-3">
-<h3 id="org071fd15">Slack settings</h3>
-<div class="outline-text-3" id="text-org071fd15">
+<div id="outline-container-orgc0ea61c" class="outline-3">
+<h3 id="orgc0ea61c">Slack settings</h3>
+<div class="outline-text-3" id="text-orgc0ea61c">
 <p>
 First thing to do is get your token, which you can do by
 </p>
@@ -157,9 +157,9 @@ For me this is everything I have to setup emacs-slack in a reasonable way.
 </div>
 </div>
 
-<div id="outline-container-org45b4967" class="outline-2">
-<h2 id="org45b4967">What About Notifications?</h2>
-<div class="outline-text-2" id="text-org45b4967">
+<div id="outline-container-orgfc7b294" class="outline-2">
+<h2 id="orgfc7b294">What About Notifications?</h2>
+<div class="outline-text-2" id="text-orgfc7b294">
 <p>
 While emacs-slack is pretty sweet, it does lack the ability to notify you when a new message shows up.
 Of course, you can use <code>slack-all-unread</code> (<code>SPC a c s u</code> in spacemacs), but for some reason this wasn't
@@ -229,9 +229,9 @@ With the above setup will be able to see your slack messages show up in org-agen
 </div>
 </div>
 
-<div id="outline-container-org8391a6d" class="outline-2">
-<h2 id="org8391a6d">Okay, but How do I Mute These Things?</h2>
-<div class="outline-text-2" id="text-org8391a6d">
+<div id="outline-container-orgedd03c6" class="outline-2">
+<h2 id="orgedd03c6">Okay, but How do I Mute These Things?</h2>
+<div class="outline-text-2" id="text-orgedd03c6">
 <p>
 Now that we can display or direct messages in org-agenda we probably want a way to mark them as READ
 and stop displaying it in our agenda. To do this we are going to add a hook to <code>org-agenda-mode-hook</code>

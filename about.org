@@ -1,6 +1,6 @@
 #+TITLE: About
 #+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf@gmail.com
+#+EMAIL:       
 
 * About Erich L Foster
 :

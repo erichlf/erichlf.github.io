@@ -1,6 +1,6 @@
 #+TITLE:       spacemacs+org-page
 #+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf@gmail.com
+#+EMAIL:       
 #+DATE:        2020-08-19 Wed
 #+URI:         /blog/%y/%m/%d/spacemacs+org-page
 #+KEYWORDS:    <TODO:insert:your:keywords:here>:

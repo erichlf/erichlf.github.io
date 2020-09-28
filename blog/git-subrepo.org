@@ -1,4 +1,4 @@
-#+TITLE:       Using a ~git-subrepo~
+#+TITLE:       ~git-subrepo~ vs ~git-subtree~
 #+AUTHOR:      Erich L Foster
 #+EMAIL:
 #+DATE:        2020-09-27 Sun

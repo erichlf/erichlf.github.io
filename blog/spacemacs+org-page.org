@@ -1,6 +1,6 @@
 #+TITLE:       spacemacs+org-page
 #+AUTHOR:      Erich L Foster
-#+EMAIL:       
+#+EMAIL:       erichlf AT gmail DOT com
 #+DATE:        2020-08-19 Wed
 #+URI:         /blog/%y/%m/%d/spacemacs+org-page
 #+KEYWORDS:    <TODO:insert:your:keywords:here>:
@@ -11,7 +11,7 @@
 Note: I took a good portion of this from [[http://adlawren.github.io/blog/2018/05/20/using-org-page-to-publish-to-github-pages-in-spacemacs/][here]].
 However, I felt some more details needed to be added.
 
-* Installing org-page:
+* Installing [[https://github.com/erichlf/org-page][org-page]]:
 First thing to do is to add org-page to the ~additional-packages~ portion of your ~.spacemacs~ file
 #+BEGIN_SRC emacs-listp
     (org-page :location (recipe

@@ -1,6 +1,6 @@
 #+TITLE:       How to Get a Continuous Status from dd
 #+AUTHOR:      Erich L Foster
-#+EMAIL:       
+#+EMAIL:       erichlf AT gmail DOT com
 #+DATE:        2020-09-19 Sat
 #+URI:         /blog/%y/%m/%d/how-to-get-a-continuous-status-from-dd
 #+KEYWORDS:    :dd:linux:bash:

@@ -1,6 +1,6 @@
 #+TITLE:       How to Setup Emacs-Slack and Get Notifications in Org-Agenda
 #+AUTHOR:      Erich L Foster
-#+EMAIL:       
+#+EMAIL:       erichlf AT gmail DOT com
 #+DATE:        2020-09-09 Wed
 #+URI:         /blog/%y/%m/%d/how-to-setup-emacs-slack-and-get-notification-in-org-agenda
 #+KEYWORDS:    :slack:org-agenda:emacs:

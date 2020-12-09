@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Speed Up Spacemacs using Emacs as a Daemon - That Stuff I Found Along the Way</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Erich L Foster" />
+    <meta name="description" content="How to speed up Spacemacs using emacs in daemon mode on Ubuntu" />
+    <meta name="keywords" content="spacemacs, emacs, daemon, ubuntu" />
+    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
+  </head>
+  <body class="container">
+    <div>
+      <header class="masthead">
+        <h1 class="masthead-title"><a href="/">That Stuff I Found Along the Way</a></h1>
+        <p></p>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/recipes/">Recipes</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="https://github.com/erichlf">GitHub</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+        <form method="get" id="searchform" action="//www.google.com/search">
+          <input type="text" class="field" name="q" id="s" placeholder="Search">
+          <input type="hidden" name="as_sitesearch" value="erichlf.github.io">
+        </form>
+      </header>
+    </div>
+
+<div>
+<div class="post">
+<h1>Speed Up Spacemacs using Emacs as a Daemon</h1>
+
+<div id="outline-container-org2d9335c" class="outline-2">
+<h2 id="org2d9335c">The Problem:</h2>
+<div class="outline-text-2" id="text-org2d9335c">
+<p>
+Spacemacs takes quite a while to load when you have added all sorts of nice modes. I have had other issues
+with multiple emacs open causing issues with my slack setup.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcdbeb58" class="outline-2">
+<h2 id="orgcdbeb58">The Fix:</h2>
+<div class="outline-text-2" id="text-orgcdbeb58">
+<p>
+Run spacemacs with emacs in daemon mode.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org845df38" class="outline-2">
+<h2 id="org845df38">How to Run Spacemacs in Daemon Mode on Ubuntu:</h2>
+<div class="outline-text-2" id="text-org845df38">
+<p>
+The cleanest and easiest way to do this is to use <code>systemd</code>. So we will set up them emacs daemon to start
+when a user logs in. To do this we first need to create a user specific systemd folder and then create a unit file for the emacs daemon.
+</p>
+<ol class="org-ol">
+<li><code>mkdir $HOME/.config/systemd/user</code></li>
+<li><p>
+Then add the following to the unit file at <code>$HOME/.config/systemd/user/emacs.service</code>
+</p>
+<pre class="example">
+[Unit]
+Description=Emacs text editor
+Documentation=info:emacs man:emacs(1) https://gnu.org/software/emacs/
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/emacs --fg-daemon
+ExecStop=/usr/bin/emacsclient --eval "(kill-emacs)"
+Environment=SSH_AUTH_SOCK=%t/keyring/ssh
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
+</pre></li>
+<li>Now you can go ahead and run the daemon:
+<code>systemd --user enable --now emacs</code></li>
+</ol>
+
+<p>
+If you wanted you could leave it at that and then just run emacs using <code>emacsclient -c -a emacs</code>. This will
+create a new frame and if the emacs daemon isn't running it will use emacs. If you don't want to run emacs
+in a new frame just use <code>-t</code> instead of <code>-c</code>. However, no one really wants to run that every time you want
+to edit a file.
+</p>
+
+<p>
+To address this issue the first thing to do would be to add the following to your <code>.bashrc</code>
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">alias emacs='emacsclient -t -a emacs'
+export EDITOR='emacsclient -t -a emacs'
+export VISUAL='emacsclient -c -a emacs'
+</pre>
+</div>
+<p>
+Next we will add a desktop file for emacsclient at <code>$HOME/.local/share/application/emacsclient.desktop</code> containing
+</p>
+<pre class="example">
+[Desktop Entry]
+Name=Emacs (Client)
+GenericName=Text Editor
+Comment=Edit text
+MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;text/x-c;text/x-c++;
+Exec=emacsclient -c -a "emacs" %F
+Icon=emacs
+Type=Application
+Terminal=false
+Categories=Development;TextEditor;Utility;
+StartupWMClass=Emacs
+Keywords=Text;Editor;
+</pre>
+
+<p>
+One thing to be sure of after all this is that any special fonts are install system wide. To do this place
+the otf files in <code>/usr/local/share/fonts</code> and then run <code>fc-cache -f</code>.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+    <div>
+      <div class="post-meta">
+        <span title="post date" class="post-info">2020-12-09</span>
+        <span title="last modification date" class="post-info">2020-12-09</span>
+        <span title="tags" class="post-info"><a href="/tags/spacemacs/">spacemacs</a>, <a href="/tags/emacs/">emacs</a>, <a href="/tags/daemon/">daemon</a>, <a href="/tags/ubuntu/">ubuntu</a></span>
+        <span title="author" class="post-info">Erich L Foster</span>
+      </div>
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          //var disqus_developer = 1;
+          var disqus_identifier = "/blog/2020/12/09/speed-up-spacemacs-using-emacs-as-a-daemon";
+          var disqus_url = "https://erichlf.github.io/blog/2020/12/09/speed-up-spacemacs-using-emacs-as-a-daemon";
+          var disqus_shortname = 'erichfoster';
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="//disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </section>
+      <script src="//code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="/media/js/main.js"></script>
+      <div class="footer">
+        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 26.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
+        <p>
+          Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:">Erich L Foster</a>
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/erichlf/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -4,10 +4,17 @@
     <title>That Stuff I Found Along the Way</title>
     <link>https://erichlf.github.io</link>
     <description></description>
-    <pubDate>Wed, 18 Nov 2020 14:50:23 EST</pubDate>
-    <lastBuildDate>Wed, 18 Nov 2020 14:50:23 EST</lastBuildDate>
+    <pubDate>Wed, 09 Dec 2020 13:17:03 EST</pubDate>
+    <lastBuildDate>Wed, 09 Dec 2020 13:17:03 EST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/erichlf/org-page)</generator>
+    <item>
+      <title>Speed Up Spacemacs using Emacs as a Daemon</title>
+      <link>https://erichlf.github.io/blog/2020/12/09/speed-up-spacemacs-using-emacs-as-a-daemon</link>
+      <description><![CDATA[How to speed up Spacemacs using emacs in daemon mode on Ubuntu]]></description>
+      <pubDate>2020-12-09</pubDate>
+      <guid>https://erichlf.github.io/blog/2020/12/09/speed-up-spacemacs-using-emacs-as-a-daemon</guid>
+    </item>
     <item>
       <title>Flour Tortillas</title>
       <link>https://erichlf.github.io/Recipes/Bread/FlourTortillas</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[Yummy Vegan Potato Salad]]></description>
       <pubDate>2020-10-01</pubDate>
       <guid>https://erichlf.github.io/Recipes/Appetizers/PotatoSalad</guid>
-    </item>
-    <item>
-      <title>Raw Corn Chips</title>
-      <link>https://erichlf.github.io/Recipes/Appetizers/RawCornChips</link>
-      <description><![CDATA[Raw Corn Chips]]></description>
-      <pubDate>2020-10-01</pubDate>
-      <guid>https://erichlf.github.io/Recipes/Appetizers/RawCornChips</guid>
     </item>
   </channel>
 </rss>

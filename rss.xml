@@ -4,10 +4,24 @@
     <title>That Stuff I Found Along the Way</title>
     <link>https://erichlf.github.io</link>
     <description></description>
-    <pubDate>Thu, 22 Apr 2021 11:47:59 EDT</pubDate>
-    <lastBuildDate>Thu, 22 Apr 2021 11:47:59 EDT</lastBuildDate>
+    <pubDate>Thu, 22 Apr 2021 11:58:30 EDT</pubDate>
+    <lastBuildDate>Thu, 22 Apr 2021 11:58:30 EDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/erichlf/org-page)</generator>
+    <item>
+      <title>Flour Tortillas</title>
+      <link>https://erichlf.github.io/Recipes/Bread/FlourTortillas</link>
+      <description><![CDATA[Soft flour tortillas]]></description>
+      <pubDate>2021-04-22</pubDate>
+      <guid>https://erichlf.github.io/Recipes/Bread/FlourTortillas</guid>
+    </item>
+    <item>
+      <title>Baked Oatmeal</title>
+      <link>https://erichlf.github.io/Recipes/Breakfast/BakedOatmeal</link>
+      <description><![CDATA[A vegan baked oatmeal with berries]]></description>
+      <pubDate>2021-04-22</pubDate>
+      <guid>https://erichlf.github.io/Recipes/Breakfast/BakedOatmeal</guid>
+    </item>
     <item>
       <title>Fudgy Vegan Brownies</title>
       <link>https://erichlf.github.io/recipes/Brownies</link>
@@ -16,25 +30,11 @@
       <guid>https://erichlf.github.io/recipes/Brownies</guid>
     </item>
     <item>
-      <title>Baked Oatmeal</title>
-      <link>https://erichlf.github.io/Recipes/Breakfast/BakedOatmeal</link>
-      <description><![CDATA[A vegan baked oatmeal with berries]]></description>
-      <pubDate>2021-03-05</pubDate>
-      <guid>https://erichlf.github.io/Recipes/Breakfast/BakedOatmeal</guid>
-    </item>
-    <item>
       <title>Speed Up Spacemacs using Emacs as a Daemon</title>
       <link>https://erichlf.github.io/blog/2020/12/09/speed-up-spacemacs-using-emacs-as-a-daemon</link>
       <description><![CDATA[How to speed up Spacemacs using emacs in daemon mode on Ubuntu]]></description>
       <pubDate>2020-12-09</pubDate>
       <guid>https://erichlf.github.io/blog/2020/12/09/speed-up-spacemacs-using-emacs-as-a-daemon</guid>
-    </item>
-    <item>
-      <title>Flour Tortillas</title>
-      <link>https://erichlf.github.io/Recipes/Bread/FlourTortillas</link>
-      <description><![CDATA[Soft flour tortillas]]></description>
-      <pubDate>2020-11-18</pubDate>
-      <guid>https://erichlf.github.io/Recipes/Bread/FlourTortillas</guid>
     </item>
     <item>
       <title>How to Mount Multiple Google Drives Using Autofs</title>

@@ -1,6 +1,6 @@
 #+TITLE:       Baked Oatmeal
 #+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
+#+EMAIL:       erichlf@gmail.com
 #+URI:         /Recipes/Breakfast/BakedOatmeal
 #+KEYWORDS:    vegan
 #+TAGS:        :vegan:

@@ -7,6 +7,6 @@
 	remote = git@github.com:erichlf/Recipes.git
 	branch = master
 	commit = 0bd4047511698155d55de91d7dae41add2ede9a5
-	parent = 0120fefd514d8f56d70a5c7aec4e42176687c8eb
+	parent = e5e8c8102a975b8ddd97e6f77b4cfc3dfe208954
 	method = merge
-	cmdver = 0.4.1
+	cmdver = 0.4.3

@@ -6,7 +6,7 @@
 [subrepo]
 	remote = git@github.com:erichlf/Recipes.git
 	branch = master
-	commit = d82ced6d6abb6552fe60db8a881c0ab5bbaf7ba4
-	parent = 568f9d9a515d84c0f928219f4f7df9d7f787a8d1
+	commit = f53491e69dedef1f5de6b2a556d85de800aee827
+	parent = df2817046626ac0cefe990e05456f6ef3973adee
 	method = merge
 	cmdver = 0.4.3

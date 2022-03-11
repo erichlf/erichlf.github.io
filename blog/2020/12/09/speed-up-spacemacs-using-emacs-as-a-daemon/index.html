@@ -33,9 +33,9 @@
 <div class="post">
 <h1>Speed Up Spacemacs using Emacs as a Daemon</h1>
 
-<div id="outline-container-orgd53f971" class="outline-2">
-<h2 id="orgd53f971">The Problem:</h2>
-<div class="outline-text-2" id="text-orgd53f971">
+<div id="outline-container-orgfeee7c3" class="outline-2">
+<h2 id="orgfeee7c3">The Problem:</h2>
+<div class="outline-text-2" id="text-orgfeee7c3">
 <p>
 Spacemacs takes quite a while to load when you have added all sorts of nice modes. I have had other issues
 with multiple emacs open causing issues with my slack setup.
@@ -43,18 +43,18 @@ with multiple emacs open causing issues with my slack setup.
 </div>
 </div>
 
-<div id="outline-container-orgece712f" class="outline-2">
-<h2 id="orgece712f">The Fix:</h2>
-<div class="outline-text-2" id="text-orgece712f">
+<div id="outline-container-org7b3a1d8" class="outline-2">
+<h2 id="org7b3a1d8">The Fix:</h2>
+<div class="outline-text-2" id="text-org7b3a1d8">
 <p>
 Run spacemacs with emacs in daemon mode.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgb4dd17b" class="outline-2">
-<h2 id="orgb4dd17b">How to Run Spacemacs in Daemon Mode on Ubuntu:</h2>
-<div class="outline-text-2" id="text-orgb4dd17b">
+<div id="outline-container-orga82cbf2" class="outline-2">
+<h2 id="orga82cbf2">How to Run Spacemacs in Daemon Mode on Ubuntu:</h2>
+<div class="outline-text-2" id="text-orga82cbf2">
 <p>
 The cleanest and easiest way to do this is to use <code>systemd</code>. So we will set up them emacs daemon to start
 when a user logs in. To do this we first need to create a user specific systemd folder and then create a unit file for the emacs daemon.

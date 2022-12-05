@@ -4,10 +4,17 @@
     <title>That Stuff I Found Along the Way</title>
     <link>https://erichlf.github.io</link>
     <description></description>
-    <pubDate>Mon, 05 Dec 2022 14:48:39 EST</pubDate>
-    <lastBuildDate>Mon, 05 Dec 2022 14:48:39 EST</lastBuildDate>
+    <pubDate>Mon, 05 Dec 2022 14:52:37 EST</pubDate>
+    <lastBuildDate>Mon, 05 Dec 2022 14:52:37 EST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/erichlf/org-page)</generator>
+    <item>
+      <title>Raw Chocolate Fudge</title>
+      <link>https://erichlf.github.io/Recipes/Dessert/RawChocolateFudge</link>
+      <description><![CDATA[Raw Chocolate Fudge]]></description>
+      <pubDate>2022-12-05</pubDate>
+      <guid>https://erichlf.github.io/Recipes/Dessert/RawChocolateFudge</guid>
+    </item>
     <item>
       <title>Vegan Chocolate Pudding</title>
       <link>https://erichlf.github.io/Recipes/Dessert/VeganChocolatePudding</link>
@@ -70,13 +77,6 @@
       <description><![CDATA[Raw Falafel]]></description>
       <pubDate>2022-03-08</pubDate>
       <guid>https://erichlf.github.io/Recipes/Appetizers/RawFalafel</guid>
-    </item>
-    <item>
-      <title>Vegetable Samosa</title>
-      <link>https://erichlf.github.io/Recipes/Appetizers/Samosa</link>
-      <description><![CDATA[Authentic Indian Vegetable Samosa]]></description>
-      <pubDate>2022-03-08</pubDate>
-      <guid>https://erichlf.github.io/Recipes/Appetizers/Samosa</guid>
     </item>
   </channel>
 </rss>

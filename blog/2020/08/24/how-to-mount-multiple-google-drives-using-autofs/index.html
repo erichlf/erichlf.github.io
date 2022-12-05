@@ -36,9 +36,9 @@
 Note: I am using a debian based system, so the commands below correspond to those types of systems.
 </p>
 
-<div id="outline-container-org8ef523a" class="outline-2">
-<h2 id="org8ef523a">Install <code>autofs</code></h2>
-<div class="outline-text-2" id="text-org8ef523a">
+<div id="outline-container-orgaf944ce" class="outline-2">
+<h2 id="orgaf944ce">Install <code>autofs</code></h2>
+<div class="outline-text-2" id="text-orgaf944ce">
 <p>
 If you don't already have <code>autofs</code> installed easily using <code>apt</code>.
 </p>
@@ -49,9 +49,9 @@ If you don't already have <code>autofs</code> installed easily using <code>apt</
 </div>
 </div>
 
-<div id="outline-container-org0deb97b" class="outline-2">
-<h2 id="org0deb97b">Install <code>google-drive-ocamlfuse</code></h2>
-<div class="outline-text-2" id="text-org0deb97b">
+<div id="outline-container-org9cb0afc" class="outline-2">
+<h2 id="org9cb0afc">Install <code>google-drive-ocamlfuse</code></h2>
+<div class="outline-text-2" id="text-org9cb0afc">
 <p>
 Next thing to do is install <code>google-drive-ocamlfuse</code>.
 </p>
@@ -74,9 +74,9 @@ sudo apt install -y google-drive-ocamlfuse
 </div>
 </div>
 
-<div id="outline-container-org104458b" class="outline-2">
-<h2 id="org104458b">Create configs for each google-drive</h2>
-<div class="outline-text-2" id="text-org104458b">
+<div id="outline-container-orgb110a3d" class="outline-2">
+<h2 id="orgb110a3d">Create configs for each google-drive</h2>
+<div class="outline-text-2" id="text-orgb110a3d">
 <p>
 To create each config we need to add a config for each google-drive. Let's assume the first drive's
 user name is <code>USER1</code> and so we will create a <code>$HOME/.gdfuse/USER1/config</code> file.
@@ -163,9 +163,9 @@ Create this file for each drive you want added.
 </div>
 </div>
 
-<div id="outline-container-org737d02a" class="outline-2">
-<h2 id="org737d02a">Authenticate each google-drive</h2>
-<div class="outline-text-2" id="text-org737d02a">
+<div id="outline-container-org6384566" class="outline-2">
+<h2 id="org6384566">Authenticate each google-drive</h2>
+<div class="outline-text-2" id="text-org6384566">
 <p>
 For each config that you have created you will need to authenticate that account. To do this we simply
 mount the each drive using <code>google-drive-ocamlfuse</code>. First we will want to make a temporary location to
@@ -205,13 +205,13 @@ during authentication.
 </div>
 </div>
 
-<div id="outline-container-org8db9a6c" class="outline-2">
-<h2 id="org8db9a6c">Create scripts to handle the mounts</h2>
-<div class="outline-text-2" id="text-org8db9a6c">
+<div id="outline-container-orgf9f2388" class="outline-2">
+<h2 id="orgf9f2388">Create scripts to handle the mounts</h2>
+<div class="outline-text-2" id="text-orgf9f2388">
 </div>
-<div id="outline-container-orgc607403" class="outline-3">
-<h3 id="orgc607403">Create gdfuse</h3>
-<div class="outline-text-3" id="text-orgc607403">
+<div id="outline-container-org777cdf6" class="outline-3">
+<h3 id="org777cdf6">Create gdfuse</h3>
+<div class="outline-text-3" id="text-org777cdf6">
 <p>
 Most of the magic will done by <code>/usr/bin/gdfuse</code>, which should contain the following
 </p>
@@ -236,9 +236,9 @@ Make sure you can execute this by running
 </div>
 </div>
 
-<div id="outline-container-org8ba0c52" class="outline-3">
-<h3 id="org8ba0c52">Create autofs scripts</h3>
-<div class="outline-text-3" id="text-org8ba0c52">
+<div id="outline-container-org0a04323" class="outline-3">
+<h3 id="org0a04323">Create autofs scripts</h3>
+<div class="outline-text-3" id="text-org0a04323">
 <p>
 Add the following to <code>/etc/auto.master</code>
 </p>
@@ -286,9 +286,9 @@ I tend to make drive names and the labels the same, but they don't have to be.
 </div>
 </div>
 
-<div id="outline-container-orgcc6593f" class="outline-2">
-<h2 id="orgcc6593f">Restart autofs and test things out</h2>
-<div class="outline-text-2" id="text-orgcc6593f">
+<div id="outline-container-org31d98f0" class="outline-2">
+<h2 id="org31d98f0">Restart autofs and test things out</h2>
+<div class="outline-text-2" id="text-org31d98f0">
 <p>
 Now is the time to see if our hard work has paid off. So, let's restart autofs and attempt to mount a drive
 </p>

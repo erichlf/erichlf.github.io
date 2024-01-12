@@ -10,7 +10,7 @@
 #+DESCRIPTION: Classic German Apfel Streusel Kuchen
 * Ingredients:
 ** Batter:
-- 4 Eggs
+- 4 [[Flax Egg|Flax Eggs]]
 - 200 g Sugar
 - 250 g Flour
 - 1 tsp Baking Powder
@@ -22,7 +22,7 @@
 ** Streusel Topping:
 - 200 g Sugar
 - 400 g Flour
-- 200 g Butter
+- 200 g Plant Based Butter
 
 * Method:
 1. Preheat oven to 350F.

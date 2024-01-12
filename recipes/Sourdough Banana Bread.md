@@ -3,15 +3,15 @@
 #+EMAIL:       erichlf AT gmail DOT com
 #+DATE:        2020-08-26 Wed
 #+URI:         /Recipes/Dessert/SourdoughBananaBread
-#+KEYWORDS:    dessert, sourdough, bread
-#+TAGS:        :dessert:sourdough:bread:
+#+KEYWORDS:    vegan, dessert, sourdough, bread
+#+TAGS:        :vegan:dessert:sourdough:bread:
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Sourdough Banana Bread
 * Ingredients:
 - 60 g Shortening
 - 200 g Sugar
-- 1 Egg
+- 1 [[Flax Egg]]
 - 250 g Flour
 - 1 tsp Baking Powder
 - 1/2 tsp Baking Soda

@@ -3,7 +3,7 @@
 #+EMAIL:       erichlf AT gmail DOT com
 #+DATE:        2020-08-26 Wed
 #+URI:         /Recipes/Dessert/ZucchiniBread
-#+KEYWORDS:    dessert, bread
+#+KEYWORDS:    vega, dessert, bread
 #+TAGS:        :dessert:bread:
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
@@ -15,7 +15,7 @@
 - 1 tsp Baking Powder
 - 2 tsp Ground Cinnamon
 - 1 tsp Ground Nutmeg
-- 3 Eggs
+- 3 [[Flax Eggs]]
 - 1 C Vegetable Oil
 - 2 1/4 C Sugar
 - 3 tsp Vanilla Extract

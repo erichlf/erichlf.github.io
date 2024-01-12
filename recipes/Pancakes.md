@@ -3,7 +3,7 @@
 #+EMAIL:       erichlf AT gmail DOT com
 #+DATE:        2020-08-25 Tue
 #+URI:         /Recipes/Breakfast/Pancakes
-#+KEYWORDS:    breakfast
+#+KEYWORDS:    vegan, breakfast
 #+TAGS:        :breakfast:
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
@@ -13,9 +13,9 @@
 - 1 T (10g) Baking Powder
 - 1/2 tsp (4g) Salt
 - 1 T (15g) Sugar
-- 1 1/4 - 1 1/2 C Milk
-- 1 Egg
-- 3 T Butter, melted
+- 1 1/4 - 1 1/2 C Plant Based Milk
+- 1 [[Flax Egg]]
+- 3 T Plant Based Butter, melted
 
 * Method:
 1. Mix the ingredients and then cook up on a griddle, stupid!

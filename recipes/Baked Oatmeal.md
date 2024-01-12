@@ -17,7 +17,7 @@
   - 1 tsp Baking Powder
   - 1/2 tsp Salt
   - 150g Frozen Berry Medley
-  - 2 [[file:../FlaxEgg.org][Flax Eggs]]
+  - 2 [[Flax Egg|Flax Eggs]]
   - Cinnamon (to taste)
   - Brown Sugar (to taste)
 

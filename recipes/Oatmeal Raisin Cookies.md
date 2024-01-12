@@ -3,16 +3,16 @@
 #+EMAIL:       erichlf AT gmail DOT com
 #+DATE:        2020-08-26 Wed
 #+URI:         /Recipes/Dessert/OatmealRaisinCookies
-#+KEYWORDS:    dessert, cookies
+#+KEYWORDS:    vegan, dessert, cookies
 #+TAGS:        :dessert:cookies:
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: Oatmeal Raisin Cookies
 * Ingredients:
-- 50 g Butter
+- 50 g Plant Based Butter
 - 50 g Sugar
-- 1 T Honey
-- 1 Egg
+- 1 T Honey or Agave Syrup
+- 1 [[Flax Egg]]
 - 1 tsp Cinnamon Powder
 - 50 g Flour
 - 1 tsp Baking Powder

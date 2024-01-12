@@ -1,13 +1,16 @@
-#+TITLE:       Biscuits
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-25 Tue
-#+URI:         /Recipes/Bread/Biscuits
-#+KEYWORDS:    vegan, bread, southern
-#+TAGS:        :vegan:bread:southern:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Old fashioned biscuits made vegan
+---
+share: true
+title: Biscuits
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-25 Tue
+tags:
+  - recipes
+  - vegan
+  - bread
+  - southern
+---
+Old fashioned biscuits made vegan
 * Ingredients:
 - 2 C Flour
 - 2 T Sugar

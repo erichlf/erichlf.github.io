@@ -1,7 +1,9 @@
-#+TITLE: About
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-
+---
+share: true
+title: About
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+---
 * About Erich L Foster
 :
   I went to school for a very long time to become a Mathematician.

@@ -1,13 +1,15 @@
-#+TITLE:       Carob Spirulina Bars
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Dessert/CarobSpirulinaBars
-#+KEYWORDS:    vegan, dessert
-#+TAGS:        :vegan:dessert:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Carob Spirulina Bars
+---
+share: true
+title: Carob Spirulina Bars
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - dessert
+---
+Carob Spirulina Bars
 * Ingredients:
 - 50 g Dried Apricots
 - 15 g Spirulina Powder

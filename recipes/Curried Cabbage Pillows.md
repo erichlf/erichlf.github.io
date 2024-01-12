@@ -1,13 +1,16 @@
-#+TITLE: Curried Cabbage Pillows
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Appetizers/CurriedCabbagePillows
-#+KEYWORDS:    vegan, raw, appetizer
-#+TAGS:        :vegan:raw:appetizer:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Curried Cabbage Pillows
+---
+share: true
+title: Curried Cabbage Pillows
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - raw
+  - appetizer
+---
+Curried Cabbage Pillows
 * Ingredients:
 ** Wrappers:
 - 5 C Zucchini (peeled)

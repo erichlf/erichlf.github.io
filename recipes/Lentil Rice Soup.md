@@ -1,13 +1,14 @@
-#+TITLE: Lentil Rice Soup
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/SoupAndSalad/LentilRiceSoup
-#+KEYWORDS:    soup
-#+TAGS:        :soup:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Lentil Rice Soup
+---
+share: true
+title: Lentil Rice Soup
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - soup
+---
+Lentil Rice Soup
 * Ingredients:
 - 2 T Olive Oil
 - 2 T Margarine

@@ -1,13 +1,15 @@
-#+TITLE:       Pumpkin Pie Bars
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Dessert/PumpkinPieBars
-#+KEYWORDS:    keto, dessert
-#+TAGS:        :keto:dessert:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Pumpkin Pie Bars
+---
+share: true
+title: Pumpkin Pie Bars
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - keto
+  - dessert
+---
+Pumpkin Pie Bars
 * Ingredients:
 - 1 C Coconut Flour
 - 1/2 C Protein Powder

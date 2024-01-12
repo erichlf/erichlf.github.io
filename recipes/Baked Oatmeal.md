@@ -1,13 +1,14 @@
-#+TITLE:       Baked Oatmeal
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf@gmail.com
-#+DATE:        2021-03-05 Fri
-#+URI:         /Recipes/Breakfast/BakedOatmeal
-#+KEYWORDS:    vegan
-#+TAGS:        :vegan:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: A vegan baked oatmeal with berries
+---
+share: true
+title: Baked Oatmeal
+author: Erich L Foster
+email: erichlf@gmail.com
+date: 2021-03-05 Fri
+tags:
+  - recipes
+  - vegan
+---
+A vegan baked oatmeal with berries
 * Ingredients:
   - 125g Rolled Oats
   - 150g Steel Cut Oats

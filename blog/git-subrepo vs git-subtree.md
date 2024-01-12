@@ -1,13 +1,17 @@
-#+TITLE:       ~git-subrepo~ vs ~git-subtree~
-#+AUTHOR:      Erich L Foster
-#+EMAIL:
-#+DATE:        2020-09-27 Sun
-#+URI:         /blog/%y/%m/%d/using-a-git-subrepo
-#+KEYWORDS:    git, subrepo, subtree, submodule, org-page
-#+TAGS:        :git:git-subrepo:git-submodule:git-tree:org-page:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Simplifying ~git~ workflow using a ~git-subrepo~
+---
+share: true
+title:       ~git-subrepo~ vs ~git-subtree~
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-09-27 Sun
+tags:
+  - git
+  - git-subrepo
+  - git-submodule
+  - git-tree
+  - org-page
+---
+Simplifying ~git~ workflow using a ~git-subrepo~
 
 * Some Background
   If you look into the menu above you will see that I have shared my recipes. I have had a ~git~ repo of my

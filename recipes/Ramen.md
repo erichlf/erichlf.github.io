@@ -1,13 +1,16 @@
-#+TITLE:       Ramen
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Entrees/Ramen
-#+KEYWORDS:    vegan, entree, japanese
-#+TAGS:        :vegan:entree:japanese:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Vegan Mushroom Ramen
+---
+share: true
+title: Ramen
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - entree
+  - japanese
+---
+Vegan Mushroom Ramen
 * Ingredients:
 - 1 T Oil
 - 7 Oz Shiitake Mushrooms (stems removed, thinly sliced)

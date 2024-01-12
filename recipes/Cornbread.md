@@ -1,13 +1,16 @@
-#+TITLE:       Cornbread
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-25 Tue
-#+URI:         /Recipes/Bread/Cornbread
-#+KEYWORDS:    bread, southern, vegan
-#+TAGS:        :bread:southern:vegan:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Cast iron cornbread that is really yummy
+---
+share: true
+title: Cornbread
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-25 Tue
+tags:
+  - recipes
+  - bread
+  - southern
+  - vegan
+---
+Cast iron cornbread that is really yummy
 * Ingredients:
 - 160 g cornmeal
 - 140 g flour

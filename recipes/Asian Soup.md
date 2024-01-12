@@ -1,13 +1,14 @@
-#+TITLE: Asian Soup
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/SoupAndSalad/AsianSoup
-#+KEYWORDS:    soup
-#+TAGS:        :soup:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Asian Soup
+---
+share: true
+title: Asian Soup
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - soup
+---
+Asian Soup
 * Ingredients:
 - 2 C Bok Choy (chopped)
 - 2 C Napa Cabbage (chopped)

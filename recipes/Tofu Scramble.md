@@ -1,13 +1,16 @@
-#+TITLE:       Tofu Scramble
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-25 Tue
-#+URI:         /Recipes/Breakfast/TofuScramble
-#+KEYWORDS:    vegan, breakfast, high protein
-#+TAGS:        :vegan:breakfast:high protein:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Tofu Scramble
+---
+share: true
+title: Tofu Scramble
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-25 Tue
+tags:
+  - recipes
+  - vegan
+  - breakfast
+  - high-protein
+---
+Tofu Scramble
 * Ingredients:
 - 400 g Extra Firm Tofu (pressed and cubed)
 - 120 g Onion (diced)

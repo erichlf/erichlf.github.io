@@ -1,13 +1,14 @@
-#+TITLE:       Chocolate Cake
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Dessert/ChocolateCake
-#+KEYWORDS:    dessert
-#+TAGS:        :dessert:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Rich Chocolate Cake
+---
+share: true
+title: Chocolate Cake
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - dessert
+---
+Rich Chocolate Cake
 * Ingredients:
 ** Batter:
 - 100 g Unsalted Butter

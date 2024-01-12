@@ -1,13 +1,15 @@
-#+TITLE:       Gomen
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Entrees/Gomen
-#+KEYWORDS:    ethiopian, entree
-#+TAGS:        :ethiopian:entree:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Gomen
+---
+share: true
+title: Gomen
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - ethiopian
+  - entree
+---
+Gomen
 * Ingredients:
 - 1 lb Collard Greens or Kale
 - 1/2 C Onions (finely chopped)

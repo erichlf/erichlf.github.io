@@ -1,13 +1,15 @@
-#+TITLE:       Corned Beef Seitan
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/VeggieMeats/CornedBeefSeitan
-#+KEYWORDS:    vegan, veggie meat
-#+TAGS:        :vegan:veggie meat:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Vegan Corned Beef Seitan
+---
+share: true
+title: Corned Beef Seitan
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+veggie meat
+---
+Vegan Corned Beef Seitan
 * Ingredients:
 - 1 1/4 C Wheat Gluten
 - 1/2 T Mustard

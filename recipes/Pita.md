@@ -1,13 +1,15 @@
-#+TITLE:       Pita
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-25 Tue
-#+URI:         /Recipes/Bread/Pita
-#+KEYWORDS:    bread, middle eastern
-#+TAGS:        :bread:middle eastern:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: An easy pita bread
+---
+share: true
+title: Pita
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-25 Tue
+tags:
+  - recipes
+  - bread
+middle eastern
+---
+An easy pita bread
 * Ingredients:
 - 2 1/4 tsp Instant Dry Yeast
 - 1/2 C Warm Water

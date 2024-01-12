@@ -1,13 +1,15 @@
-#+TITLE:       Zucchini Bread
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Dessert/ZucchiniBread
-#+KEYWORDS:    vega, dessert, bread
-#+TAGS:        :dessert:bread:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Zucchini Bread
+---
+share: true
+title: Zucchini Bread
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - dessert
+  - bread
+---
+Zucchini Bread
 * Ingredients:
 - 3 C Flour
 - 1 tsp Salt

@@ -1,13 +1,16 @@
-#+TITLE:       Shakshuka
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Entrees/Shakshuka
-#+KEYWORDS:    vegan, entree, middle eastern
-#+TAGS:        :vegan:entree:middle eastern:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Vegan Shakshuka
+---
+share: true
+title: Shakshuka
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - entree
+  - middle-eastern
+---
+Vegan Shakshuka
 * Ingredients:
 - 1 T Olive Oil
 - 1/2 C White Onion (diced)

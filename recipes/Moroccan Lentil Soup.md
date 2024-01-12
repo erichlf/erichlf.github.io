@@ -1,13 +1,15 @@
-#+TITLE: Moroccan Lentil Soup
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/SoupAndSalad/MoroccanLentilSoup
-#+KEYWORDS:    soup, moroccan
-#+TAGS:        :soup:moroccan:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Moroccan Lentil Soup
+---
+share: true
+title: Moroccan Lentil Soup
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - soup
+  - moroccan
+---
+Moroccan Lentil Soup
 * Ingredients:
 - 2 onions (chopped)
 - 2 cloves garlic (minced)

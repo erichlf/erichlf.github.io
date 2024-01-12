@@ -1,13 +1,15 @@
-#+TITLE:       Cauliflower Wings
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Appetizers/CauliflowerWings
-#+KEYWORDS:    vegan, appetizer
-#+TAGS:        :vegan:appetizer:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Cauliflower Wings
+---
+share: true
+title: Cauliflower Wings
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - appetizer
+---
+Cauliflower Wings
 * Ingredients:
 ** Sauce:
 - 50 ml Balsamic Vinegar

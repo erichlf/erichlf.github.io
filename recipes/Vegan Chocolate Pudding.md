@@ -1,13 +1,15 @@
-#+TITLE:       Vegan Chocolate Pudding
-#+AUTHOR:      Erich L Foster
-#+EMAIL:
-#+DATE:        2022-03-11 Fri
-#+URI:         /Recipes/Dessert/VeganChocolatePudding
-#+KEYWORDS:    vegan, dessert
-#+TAGS:        :vegan:dessert:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Easy Vegan Chocolate Pudding
+---
+share: true
+title: Vegan Chocolate Pudding
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2022-03-11 Fri
+tags:
+  - recipes
+  - vegan
+  - dessert
+---
+Easy Vegan Chocolate Pudding
 * Ingredients:
 - 2/3 C Sugar
 - 1/4 C Cocoa Powder

@@ -1,13 +1,15 @@
-#+TITLE:       Kategna
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Entrees/Kategna
-#+KEYWORDS:    ethiopian, entree
-#+TAGS:        :ethiopian:entree:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Kategna
+---
+share: true
+title: Kategna
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - ethiopian
+  - entree
+---
+Kategna
 * Ingredients:
 - 1 piece Injera
 - 2-3 T Niter Kibbeh

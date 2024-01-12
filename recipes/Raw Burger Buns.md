@@ -1,13 +1,16 @@
-#+TITLE:       Raw Burger Buns
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Bread/RawBurgerBuns
-#+KEYWORDS:    vegan, raw, bread
-#+TAGS:        :vegan:raw:bread:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Raw Burger Buns
+---
+share: true
+title: Raw Burger Buns
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - raw
+  - bread
+---
+Raw Burger Buns
 * Ingredients:
 - 2 C Sprouted Buckwheat
 - 3/4 C Flax Seeds (soaked)

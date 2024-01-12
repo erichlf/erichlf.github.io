@@ -1,13 +1,16 @@
-#+TITLE:       Apple Empanadas
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/dessert/AppleEmpanadas
-#+KEYWORDS:    vegan, dessert, mexican
-#+TAGS:        :vegan:dessert:mexican:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Vegan Apple Empanadas
+---
+share: true
+title: Apple Empanadas
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - dessert
+  - mexican
+---
+Vegan Apple Empanadas
 * Ingredients:
 ** Dough:
 - 2 C Flour

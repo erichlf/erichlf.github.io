@@ -1,13 +1,16 @@
-#+TITLE:       Speed Up Spacemacs using Emacs as a Daemon
-#+AUTHOR:      Erich L Foster
-#+EMAIL:
-#+DATE:        2020-12-09 Wed
-#+URI:         /blog/%y/%m/%d/speed-up-spacemacs-using-emacs-as-a-daemon
-#+KEYWORDS:    spacemacs, emacs, daemon, ubuntu
-#+TAGS:        :spacemacs:emacs:daemon:ubuntu:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: How to speed up Spacemacs using emacs in daemon mode on Ubuntu
+---
+share: true
+title: Speed Up Spacemacs using Emacs as a Daemon
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-12-09 Wed
+tags:
+  - spacemacs
+  - emacs
+  - daemon
+  - ubuntu
+---
+How to speed up Spacemacs using emacs in daemon mode on Ubuntu
 
 * The Problem:
   Spacemacs takes quite a while to load when you have added all sorts of nice modes. I have had other issues

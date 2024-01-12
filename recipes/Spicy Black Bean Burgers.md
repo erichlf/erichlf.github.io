@@ -1,13 +1,15 @@
-#+TITLE: Spicy Black Bean Burgers
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Entrees/SpicyBlackBeanBurgers
-#+KEYWORDS:    vegan, entree
-#+TAGS:        :vegan:entree:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Spicy Black Bean Burgers
+---
+share: true
+title: Spicy Black Bean Burgers
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - entree
+---
+Spicy Black Bean Burgers
 * Ingredients
 - 2 C Dry Black Beans (or 2 16 Oz Cans)
 - 2 Jalepenos (diced)

@@ -1,13 +1,15 @@
-#+TITLE:       How to Setup Emacs-Slack and Get Notifications in Org-Agenda
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-09-09 Wed
-#+URI:         /blog/%y/%m/%d/how-to-setup-emacs-slack-and-get-notification-in-org-agenda
-#+KEYWORDS:    :slack:org-agenda:emacs:
-#+TAGS:        slack, org-agenda, emacs
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: How I got emacs-slack to work with org-agenda and stop worrying
+---
+share: true
+title: How to Setup Emacs-Slack and Get Notifications in Org-Agenda
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-09-09 Wed
+tags:        
+  - slack
+  - org-agenda
+  - emacs
+---
+How I got emacs-slack to work with org-agenda and stop worrying
 * note:
   Thanks to [[https://ag91.github.io/blog/2020/08/14/slack-messages-in-your-org-agenda/][Andrea (ag91)]] for the initial work he provided.
 
@@ -93,7 +95,7 @@ following will, hopefully, give all the details you need to get things up and ru
   ~$HOME/org/~. So change the following to fit your setup. In this ~slack.org~ file we will create the
   following list of TODO states
   #+BEGIN_SRC emacs-lisp
-  #+TODO: UNREAD(u) | READ(r)
+  todo: UNREAD(u) | READ(r)
   #+END_SRC
   This tells org-mode that the UNREAD state is the only TODO state, while the READ state is the only
   closed state. It also says not to log state changes.

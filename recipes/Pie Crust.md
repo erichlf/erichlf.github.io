@@ -1,13 +1,15 @@
-#+TITLE:       Pie Crust
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Dessert/PieCrust
-#+KEYWORDS:    vegan, dessert
-#+TAGS:        :vegan:dessert:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Vegan Pie Crust
+---
+share: true
+title: Pie Crust
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - dessert
+---
+Vegan Pie Crust
 * Ingredients:
 - 2 - 4 T ice water
 - 2 C flour

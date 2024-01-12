@@ -1,13 +1,17 @@
-#+TITLE: Vegan Pesto
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Sauces/VeganPesto
-#+KEYWORDS:    vegan, raw, sauce, italian
-#+TAGS:        :vegan:raw:sauce:italian:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Vegan Pesto
+---
+share: true
+title: Vegan Pesto
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - raw
+  - sauce
+  - italian
+---
+Vegan Pesto
 * Ingredients:
 - 1/2 C Pinenuts (soaked)
 - 2 C Basil

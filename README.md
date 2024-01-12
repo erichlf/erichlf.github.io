@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+share: true
 ---
 
-Personal site of Erich L Foster, managed by Obsidian, Digital Garden, Vercel, and GitHub.
+Personal site of Erich L Foster, managed by Obsidian, Obsidian Github-Publisher, and GitHub.

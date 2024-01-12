@@ -1,13 +1,16 @@
-#+TITLE:       Flour Tortillas
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf@gmail.com
-#+DATE:        2020-11-18 Wed
-#+URI:         /Recipes/Bread/FlourTortillas
-#+KEYWORDS:    bread, mexican, vegan
-#+TAGS:        :bread:mexican:vegan
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Soft flour tortillas
+---
+share: true
+title: Flour Tortillas
+author: Erich L Foster
+email: erichlf@gmail.com
+date: 2020-11-18 Wed
+tags:
+  - recipes
+  - bread
+  - mexican
+  - vegan
+---
+Soft flour tortillas
 * Ingredients:
   - 300g Flour
   - 5g Salt

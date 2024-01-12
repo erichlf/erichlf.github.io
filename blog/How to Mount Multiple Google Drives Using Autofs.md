@@ -1,13 +1,14 @@
-#+TITLE:       How to Mount Multiple Google Drives Using Autofs
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-24 Mon
-#+URI:         /blog/%y/%m/%d/how-to-mount-multiple-google-drives-using-autofs
-#+KEYWORDS:    :autofs:google-drive:
-#+TAGS:        autofs, google-drive
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Directions to enable multiple google-drive mounts using autofs
+---
+share: true
+title: How to Mount Multiple Google Drives Using Autofs
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-24 Mon
+tags:        
+  - autofs
+  - google-drive
+---
+Directions to enable multiple google-drive mounts using autofs
 
 Note: I am using a debian based system, so the commands below correspond to those types of systems.
 

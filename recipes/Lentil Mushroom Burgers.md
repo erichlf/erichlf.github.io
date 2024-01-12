@@ -1,13 +1,15 @@
-#+TITLE:       Lentil Mushroom Burgers
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Entrees/LentilMushroomBurgers
-#+KEYWORDS:    vegan, entree
-#+TAGS:        :vegan:entree:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Lentil Mushroom Burgers
+---
+share: true
+title: Lentil Mushroom Burgers
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - entree
+---
+Lentil Mushroom Burgers
 * Ingredients
 - 2 T Extra-virgin Olive Oil
 - 3/4 C Onion (chopped)

@@ -1,13 +1,16 @@
-#+TITLE: Raw Corn Chips
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Appetizers/RawCornChips
-#+KEYWORDS:    vegan, raw, appetizer
-#+TAGS:        :vegan:raw:appetizer:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Raw Corn Chips
+---
+share: true
+title: Raw Corn Chips
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - raw
+  - appetizer
+---
+Raw Corn Chips
 * Ingredients:
 1. 5 Ears Corn (cut kernels from cob)
 2. 4 T Ground Flax

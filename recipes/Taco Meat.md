@@ -1,13 +1,15 @@
-#+TITLE:       Veggie Taco Meat
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Entrees/VeggieTacoMeat
-#+KEYWORDS:    veggie meat, lation
-#+TAGS:        :veggie meat:latino:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Veggie Taco Meat
+---
+share: true
+title: Veggie Taco Meat
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - veggie-meat
+  - latino
+---
+Veggie Taco Meat
 * Ingredients:
 - 1 C T.V.P.
 - 1 1/2 T Chili Powder

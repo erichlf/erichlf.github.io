@@ -1,13 +1,15 @@
-#+TITLE: Pesto
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Sauces/Pesto
-#+KEYWORDS:    sauce, italian
-#+TAGS:        :sauce:italian:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Pesto
+---
+share: true
+title: Pesto
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - sauce
+  - italian
+---
+Pesto
 * Ingredients
 - 2 C Packed Basil Leaves
 - 1/3 C Olive Oil

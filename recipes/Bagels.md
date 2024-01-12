@@ -1,13 +1,15 @@
-#+TITLE:       Bagels
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-25 Tue
-#+URI:         /Recipes/Bread/Bagels
-#+KEYWORDS:    bread, breakfast
-#+TAGS:        :bread:breakfast:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Plain Bagels
+---
+share: true
+title: Bagels
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-25 Tue
+tags:
+  - recipes
+  - bread
+  - breakfast
+---
+Plain Bagels
 * Ingredients
 - 1 1/2 C Water (105F to 110F)
 - 2 1/4 tsp Active Dry Yeast

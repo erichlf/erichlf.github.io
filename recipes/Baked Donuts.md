@@ -1,13 +1,14 @@
-#+TITLE:       Baked Donuts
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Dessert/BakedDonuts
-#+KEYWORDS:    dessert
-#+TAGS:        :dessert:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Baked Donuts
+---
+share: true
+title: Baked Donuts
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - dessert
+---
+Baked Donuts
 * Ingredients:
 ** Dough:
 - 1/2 C + 3 T Warm Milk, divided

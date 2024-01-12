@@ -1,13 +1,15 @@
-#+TITLE:       How to Get a Continuous Status from dd
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-09-19 Sat
-#+URI:         /blog/%y/%m/%d/how-to-get-a-continuous-status-from-dd
-#+KEYWORDS:    :dd:linux:bash:
-#+TAGS:        dd, linux, bash
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Getting and updating the status of dd in bash
+---
+share: true
+title: How to Get a Continuous Status from dd
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-09-19 Sat
+tags:        
+  - dd
+  - linux
+  - bash
+---
+Getting and updating the status of dd in bash
 
 * note:
   Some versions of ~dd~ have the ability to provide the open ~-status=progress~ which makes the

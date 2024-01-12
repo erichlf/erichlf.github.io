@@ -1,13 +1,16 @@
-#+TITLE: Tamarind Rice
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Entrees/TamarindRice
-#+KEYWORDS:    vegan, entree, indian
-#+TAGS:        :vegan:entree:indian:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Tamarind Rice
+---
+share: true
+title: Tamarind Rice
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - entree
+  - indian
+---
+Tamarind Rice
 * Ingredients:
 - 2 C White Rice (cooked)
 - 2-2.5 T Tamarind Paste

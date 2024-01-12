@@ -1,13 +1,14 @@
-#+TITLE:       Fauxnard
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/VeggieMeats/Fauxnard
-#+KEYWORDS:    veggie meat
-#+TAGS:        :veggie meat:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Fauxnard
+---
+share: true
+title: Fauxnard
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+veggie meat
+---
+Fauxnard
 * Ingredients:
 - 100 g Almonds (chopped, preferably peeled and roasted)
 - 150 ml Grated Parmesan

@@ -1,13 +1,17 @@
-#+TITLE:       Sourdough Banana Bread
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Dessert/SourdoughBananaBread
-#+KEYWORDS:    vegan, dessert, sourdough, bread
-#+TAGS:        :vegan:dessert:sourdough:bread:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Sourdough Banana Bread
+---
+share: true
+title: Sourdough Banana Bread
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - dessert
+  - sourdough
+  - bread
+---
+Sourdough Banana Bread
 * Ingredients:
 - 60 g Shortening
 - 200 g Sugar

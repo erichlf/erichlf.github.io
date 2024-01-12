@@ -1,13 +1,13 @@
-#+TITLE:       Jambalaya
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2021-10-28 Thu
-#+URI:         /Recipes/Entrees/Jambalaya
-#+KEYWORDS:    creole
-#+TAGS:        creole
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Creole Vegetarian Jambalaya
+---
+share: true
+title: Jambalaya
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2021-10-28 Thu
+tags:
+  - recipes        creole
+---
+Creole Vegetarian Jambalaya
 * Ingredients:
 - 2 C Rice
 - 2 Veggie Chorizo Sausage (sliced)

@@ -1,13 +1,15 @@
-#+TITLE:       Citradelic
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Kombucha/Citradelic
-#+KEYWORDS:    kombucha, hops
-#+TAGS:        :kombucha:hops:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Citradelic
+---
+share: true
+title: Citradelic
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - kombucha
+  - hops
+---
+Citradelic
 * Ingredients:
 - 1 Gal Kombucha
 - 4 g Citra Hops (pellets)

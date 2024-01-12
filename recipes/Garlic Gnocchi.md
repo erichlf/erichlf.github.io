@@ -1,13 +1,16 @@
-#+TITLE:       Garlic Gnocchi
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Entrees/GarlicGnocchi
-#+KEYWORDS:    keto, entree, italian
-#+TAGS:        :keto:entree:italian:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Garlic Gnocchi
+---
+share: true
+title: Garlic Gnocchi
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - keto
+  - entree
+  - italian
+---
+Garlic Gnocchi
 * Ingredients
 - 2 C Shredded Low-Moisture Part-Skim Mozzarella
 - 3 Egg Yolks

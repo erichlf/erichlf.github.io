@@ -1,13 +1,15 @@
-#+TITLE:       spacemacs+org-page
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-19 Wed
-#+URI:         /blog/%y/%m/%d/spacemacs+org-page
-#+KEYWORDS:    <TODO:insert:your:keywords:here>:
-#+TAGS:        org-page, spacemacs, org-mode
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Using org-page and spacemacs
+---
+share: true
+title: spacemacs+org-page
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-19 Wed
+tags:        
+  - org-page
+  - spacemacs
+  - org-mode
+---
+Using org-page and spacemacs
 Note: I took a good portion of this from [[http://adlawren.github.io/blog/2018/05/20/using-org-page-to-publish-to-github-pages-in-spacemacs/][here]].
 However, I felt some more details needed to be added.
 

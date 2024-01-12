@@ -1,13 +1,14 @@
-#+TITLE:       Coca Cola
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/CocaCola
-#+KEYWORDS:    ethiopian
-#+TAGS:        :ethiopian:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: This is Coca Cola's Secret Recipe
+---
+share: true
+title: Coca Cola
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - ethiopian
+---
+This is Coca Cola's Secret Recipe
 * Ingredients:
 - Fluid extract of Coca: 3 drams USP
 - Citric acid: 3 Oz

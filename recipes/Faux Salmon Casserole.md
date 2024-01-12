@@ -1,13 +1,15 @@
-#+TITLE:       Faux Salmon Casserole
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Entrees/FauxSalmonCasserole
-#+KEYWORDS:    vegan, raw
-#+TAGS:        :vegan:raw:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Faux Salmon Casserole
+---
+share: true
+title: Faux Salmon Casserole
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - raw
+---
+Faux Salmon Casserole
 * Ingredients:
 - 2 C Almonds (soaked 8-10 hours)
 - 2 Carrots

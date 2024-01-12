@@ -1,13 +1,14 @@
-#+TITLE: Lentil Soup
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/SoupAndSalad/LentilSoup
-#+KEYWORDS:    soup
-#+TAGS:        :soup:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Lentil Soup
+---
+share: true
+title: Lentil Soup
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - soup
+---
+Lentil Soup
 * Ingredients:
 - 2 C green lentils (rinsed)
 - 7 C water

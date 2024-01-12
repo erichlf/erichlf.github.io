@@ -1,13 +1,15 @@
-#+TITLE:       Flax Egg
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-09-12 Sat
-#+URI:         /Recipes/FlaxEgg
-#+KEYWORDS:    vegan, egg substitute
-#+TAGS:        :vegan:egg substitute:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Flax Egg
+---
+share: true
+title: Flax Egg
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-09-12 Sat
+tags:
+  - recipes
+  - vegan
+egg substitute
+---
+Flax Egg
 * Ingredients:
 - 1 T Ground Flax Seed
 - 2 1/2 T Water

@@ -1,13 +1,16 @@
-#+TITLE:       Sourdough English Muffins
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-25 Tue
-#+URI:         /Recipes/Bread/SourdoughEnglishMuffins
-#+KEYWORDS:    bread, sourdough, breakfast
-#+TAGS:        :bread:sourdough:breakfast:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Sourdough English Muffins
+---
+share: true
+title: Sourdough English Muffins
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-25 Tue
+tags:
+  - recipes
+  - bread
+  - sourdough
+  - breakfast
+---
+Sourdough English Muffins
 * Ingredients:
 ** Sponge:
 - 33% Sourdough Starter (100% Hydration)

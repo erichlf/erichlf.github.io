@@ -1,13 +1,17 @@
-#+TITLE: Raw Falafel
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Appetizers/RawFalafel
-#+KEYWORDS:    vegan, raw, appetizer, middle eastern
-#+TAGS:        :vegan:raw:appetizer:middle eastern:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Raw Falafel
+---
+share: true
+title: Raw Falafel
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - raw
+  - appetizer
+  - middle-eastern
+---
+Raw Falafel
 * Ingredients:
 - 1 1/2 C Sprouted Chickpeas
 - 1 C Sprouted Sunflower Seeds

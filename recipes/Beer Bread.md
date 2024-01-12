@@ -1,13 +1,15 @@
-#+TITLE:       Beer Bread
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-25 Tue
-#+URI:         /Recipes/Bread/BeerBread
-#+KEYWORDS:    bread, beer
-#+TAGS:        :bread:beer:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Beer Bread
+---
+share: true
+title: Beer Bread
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-25 Tue
+tags:
+  - recipes
+  - bread
+  - beer
+---
+Beer Bread
 * Ingredients:
 - 3 C Flour (sifted)
 - 3 tsp Baking Powder

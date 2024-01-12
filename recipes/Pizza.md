@@ -1,13 +1,15 @@
-#+TITLE:       Pizza
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Entrees/Pizza
-#+KEYWORDS:    entree, italian
-#+TAGS:        :entree:italian:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Pizza
+---
+share: true
+title: Pizza
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - entree
+  - italian
+---
+Pizza
 * Ingredients:
 ** Sauce:
 - 2 Cans of Diced Tomatoes in Sauce

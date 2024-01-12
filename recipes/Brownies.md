@@ -1,13 +1,15 @@
-#+TITLE:       Fudgy Vegan Brownies
-#+AUTHOR:      Erich L Foster
-#+EMAIL:
-#+DATE:        2021-04-22 Thu
-#+URI:         /Recipes/Dessert/Brownies
-#+KEYWORDS:    vegan, dessert
-#+TAGS:        :vegan:dessert:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Fudgy Vegan Brownies
+---
+share: true
+title: Fudgy Vegan Brownies
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2021-04-22 Thu
+tags:
+  - recipes
+  - vegan
+  - dessert
+---
+Fudgy Vegan Brownies
 * Ingredient:
   - 1/2 C Flour
   - 1 1/4 C Water

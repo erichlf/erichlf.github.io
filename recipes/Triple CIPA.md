@@ -1,13 +1,15 @@
-#+TITLE:       Triple C IPA
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-25 Tue
-#+URI:         /Recipes/Beer/TripleCIPA
-#+KEYWORDS:    beer, ipa, citra, chinook, cascade
-#+TAGS:        :beer:ipa:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: An IPA using Cascade, Chinook, and Citra Hops
+---
+share: true
+title: Triple C IPA
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-25 Tue
+tags:
+  - recipes
+  - beer
+  - ipa
+---
+An IPA using Cascade, Chinook, and Citra Hops
 
 * Ingredients:
 ** Specialty Grains:

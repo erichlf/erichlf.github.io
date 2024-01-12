@@ -1,13 +1,14 @@
-#+TITLE:       Black Bean Chili
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2022-03-08 Tue
-#+URI:         /Recipes/SoupAndSalad/BlackBeanChili
-#+KEYWORDS:    tex-mex
-#+TAGS:        :tex-mex:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Vegetarian Black Bean Chili
+---
+share: true
+title: Black Bean Chili
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2022-03-08 Tue
+tags:
+  - recipes
+  - tex-mex
+---
+Vegetarian Black Bean Chili
 
 * Ingredients:
 - 28 oz Can of Diced Tomatoes

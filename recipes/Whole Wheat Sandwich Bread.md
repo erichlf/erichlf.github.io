@@ -1,13 +1,17 @@
-#+TITLE:       Whole Wheat Sandwich Bread
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-25 Tue
-#+URI:         /Recipes/Bread/WholeWheatSandwichBread
-#+KEYWORDS:    vegan, bread, whole wheat
-#+TAGS:        :vegan:bread:whole:wheat:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: A soft whole wheat sandwich bread
+---
+share: true
+title: Whole Wheat Sandwich Bread
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-25 Tue
+tags:
+  - recipes
+  - vegan
+  - bread
+  - whole
+  - wheat
+---
+A soft whole wheat sandwich bread
 * Ingredients:
 - 450 + 50 g 100% Whole Wheat Flour
 - 150 + 250 ml Pea Milk (or Oat Milk)

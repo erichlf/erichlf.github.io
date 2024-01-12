@@ -1,13 +1,16 @@
-#+TITLE:       Gluten Free Ciabatta
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-25 Tue
-#+URI:         /Recipes/Bread/GlutenFreeCiabatta
-#+KEYWORDS:    bread, gluten free, italian
-#+TAGS:        :bread:gluten free:italian:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: A surprisingly good gluten free ciabatta
+---
+share: true
+title: Gluten Free Ciabatta
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-25 Tue
+tags:
+  - recipes
+  - bread
+  - gluten-free
+  - italian
+---
+A surprisingly good gluten free ciabatta
 * Ingredients:
 - 3/4 C Lukewarm Water
 - 2 T Sugar

@@ -1,13 +1,16 @@
-#+TITLE:       Vegan Banana Bread
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Dessert/BananaBread
-#+KEYWORDS:    vegan, dessert, bread
-#+TAGS:        :vegan:dessert:bread:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Vegan Banana Bread
+---
+share: true
+title: Vegan Banana Bread
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - dessert
+  - bread
+---
+Vegan Banana Bread
 * Ingredients:
 - 1/4 C Vegetable Shortening
 - 1 C Sugar

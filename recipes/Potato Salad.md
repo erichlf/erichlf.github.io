@@ -1,13 +1,16 @@
-#+TITLE:       Vegan Potato Salad
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-25 Tue
-#+URI:         /Recipes/Appetizers/PotatoSalad
-#+KEYWORDS:    vegan, appetizer, bbq
-#+TAGS:        :vegan:appetizer:bbq:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Yummy Vegan Potato Salad
+---
+share: true
+title: Vegan Potato Salad
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-25 Tue
+tags:
+  - recipes
+  - vegan
+  - appetizer
+  - bbq
+---
+Yummy Vegan Potato Salad
 * Ingredients:
 - 2 Medium Russet Potatoes (pealed and diced)
 - 1/4 C Veganaise

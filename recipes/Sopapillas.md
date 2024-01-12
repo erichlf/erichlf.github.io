@@ -1,13 +1,16 @@
-#+TITLE:       Sopapillas
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Dessert/Sopapillas
-#+KEYWORDS:    vegan, dessert, new mexican
-#+TAGS:        :vegan:dessert:new mexican:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Vegan Sopapillas
+---
+share: true
+title: Sopapillas
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - dessert
+  - new-mexican
+---
+Vegan Sopapillas
 * Ingredients:
 - 2 C Flour
 - 1 tsp Baking Powder

@@ -1,13 +1,17 @@
-#+TITLE:       Rawvioli
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-26 Wed
-#+URI:         /Recipes/Entrees/Rawvioli
-#+KEYWORDS:    vegan, raw, entree, italian
-#+TAGS:        :vegan:raw:entree:italian:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Rawvioli
+---
+share: true
+title: Rawvioli
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-26 Wed
+tags:
+  - recipes
+  - vegan
+  - raw
+  - entree
+  - italian
+---
+Rawvioli
 * Ingredients:
 ** Wrappers:
 - 4 Turnips

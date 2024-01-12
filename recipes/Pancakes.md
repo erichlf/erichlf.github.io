@@ -1,13 +1,14 @@
-#+TITLE:       Pancakes
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-25 Tue
-#+URI:         /Recipes/Breakfast/Pancakes
-#+KEYWORDS:    vegan, breakfast
-#+TAGS:        :breakfast:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Pancakes
+---
+share: true
+title: Pancakes
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-25 Tue
+tags:
+  - recipes
+  - breakfast
+---
+Pancakes
 * Ingredients:
 - 1 1/2 C (200g) Flour
 - 1 T (10g) Baking Powder

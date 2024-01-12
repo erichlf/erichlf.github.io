@@ -1,13 +1,16 @@
-#+TITLE:       Vietnamese Spring Rolls
-#+AUTHOR:      Erich L Foster
-#+EMAIL:       erichlf AT gmail DOT com
-#+DATE:        2020-08-25 Tue
-#+URI:         /Recipes/Appetizers/SpringRolls
-#+KEYWORDS:    vegan, appetizer, vietnamese
-#+TAGS:        :vegan:appetizer:vietnamese:
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
-#+DESCRIPTION: Vietnamese Spring Rolls
+---
+share: true
+title: Vietnamese Spring Rolls
+author: Erich L Foster
+email: erichlf AT gmail DOT com
+date: 2020-08-25 Tue
+tags:
+  - recipes
+  - vegan
+  - appetizer
+  - vietnamese
+---
+Vietnamese Spring Rolls
 * Ingredients:
 ** Peanut Sauce:
 - 1 C of peanut butter
